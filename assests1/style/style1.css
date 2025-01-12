@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 body {
   font-family: "Krona One", serif;
+  background: #f3ece170;
 }
 .bg- {
   filter: brightness(50%);
