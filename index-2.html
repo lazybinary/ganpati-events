@@ -3,37 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ganpati events</title>
-  </head>
-  <body></body>
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Percentage Indicator</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="max-w-[1440px] px-2.5 xl:px-10 mx-auto py-2.5">
-        <div
-          class="flex justify-between items-center bg-black rounded-[22px] p-2.5"
-        >
-          <div class="max-w-[100px]">
-            <img class="w-full" src="./assests1/img/logo.webp" alt="logo" />
-          </div>
-          <h2 class="text-[#2c2c2c] text-[19px] font-medium">
-            Buy Happy Lohari Offer up to 25% off
-          </h2>
+    <style>
+      /* Container for the scroll indicator */
+      #scroll-indicator-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
 
-          <div
-            class="bg-[#ffb64c] p-[15px] rounded-[32px] hover:bg-[gray] duration-300 cursor-pointer mr-[76px]"
-          >
-            <img src="./assests1/img/menu-svg.svg" alt="menu-svg" />
-          </div>
-        </div>
+      /* Circle background with black border */
+      #circle-background {
+        width: 100%;
+        height: 100%;
+        border: 3px dashed black; /* Fixed black circle border */
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* The yellow progress circle */
+      #circle-progress {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: conic-gradient(
+          #ffb64c 0% 0%,
+          #e0e0e0 0% 100%
+        ); /* Starts at 0% */
+      }
+
+      /* Percentage text inside the circle */
+      #percentage-text {
+        position: absolute;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Content of the page -->
+    <div class="h-[1500px]">
+      <h1 class="text-center py-20 text-3xl font-bold">
+        Scroll to see the percentage!
+      </h1>
+    </div>
+
+    <!-- Scroll indicator container -->
+    <div id="scroll-indicator-container">
+      <div id="circle-background">
+        <div id="circle-progress"></div>
+        <div id="percentage-text">0%</div>
       </div>
-    </nav>
+    </div>
+
+    <!-- JavaScript to update the scroll indicator -->
+    <script>
+      window.onscroll = function () {
+        var scrollPosition =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        var docHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrollPercentage = (scrollPosition / docHeight) * 100;
+
+        // Update the progress circle: adjust the angle based on the scroll percentage
+        var angle = (scrollPercentage / 100) * 360;
+        var progress = document.getElementById("circle-progress");
+        progress.style.background = `conic-gradient(#ffb64c ${angle}deg, #e0e0e0 ${angle}deg)`; // Adjust color fill
+
+        // Update the percentage text inside the circle
+        document.getElementById("percentage-text").textContent =
+          Math.round(scrollPercentage) + "%";
+      };
+    </script>
   </body>
 </html>
