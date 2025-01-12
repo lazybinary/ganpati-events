@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Krona One", serif;
 }
+.ff-roboto {
+  font-family: "Roboto", serif;
+}
 .toggle-button {
   transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.our-work-card {
+  box-shadow: 0 2px 6px -2px #c7c7c7;
 }
