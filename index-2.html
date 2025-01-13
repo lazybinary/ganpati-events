@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Icon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .scroll-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        height: 55px;
+        width: 120px;
+        background-color: #f5a42f;
+        border-radius: 50px 0 0 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f5a42f;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+        transition: border-color 0.2s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 h-[2000px]">
+    <div class="scroll-icon">
+      <div class="circle" id="scrollPercentage">0%</div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        const docHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+        // Update scroll percentage text
+        document.getElementById(
+          "scrollPercentage"
+        ).innerText = `${scrollPercent}%`;
+
+        // Calculate border color from scroll percentage (white to black)
+        const borderColor = `rgb(${255 - scrollPercent}, ${scrollPercent}, 0)`;
+
+        // Apply the border color
+        document.querySelector(".circle").style.borderColor = borderColor;
+      });
+    </script>
+  </body>
+</html>

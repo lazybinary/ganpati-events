@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assests1/style/style1.css    " />
+    <link rel="stylesheet" href="./assests1/style/style2.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 564px;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="bg-white pb-5">
+      <div class="relative bg-white">
+        <nav>
+          <div
+            class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[9] fixed top-0 left-0 right-0"
+          >
+            <div
+              class="flex justify-between items-center bg-white box-shadow-main rounded-[22px] p-[6.5px] gap-3"
+            >
+              <div class="md:max-w-[188px] max-w-[80px]">
+                <a href="#">
+                  <img
+                    class="w-full"
+                    src="./assests1/img/logo.2.png"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <h2
+                class="text-[#2c2c2c] lg:text-[19px] sm:text-base text-sm font-medium text-center"
+              >
+                Buy Happy Lohari Offer up to 25% off
+              </h2>
+              <div
+                class="bg-[#ffb64c] p-[15px] rounded-[32px] hover:bg-[gray] duration-300 cursor-pointer lg:mr-[76px] mr-4"
+                id="menu-icon"
+              >
+                <img src="./assests1/img/menu-svg.svg" alt="menu-svg" />
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Sidebar -->
+        <div
+          id="sidebar"
+          class="fixed top-0 right-0 h-full w-[320px] sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[11] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
+        >
+          <div class="border-l-[#f5a42f] mx-4 border-l-[5px]">
+            <div class="flex justify-between items-center p-5">
+              <div class="max-w-[120px]">
+                <img width="100%" src="./assests1/img/logo.2.png" alt="" />
+              </div>
+              <button id="close-sidebar" class="text-white text-2xl">
+                &times;
+              </button>
+            </div>
+            <div class="p-5">
+              <ul>
+                <li>
+                  <a href="#" class="block py-2 text-[#f5a42f] text-xl"
+                    >Ganpati Events Gurgoan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Home</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >
+                    Corporate Decoration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Couple Decoration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Occasion Decoration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Birthday Decoration</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >
+                    Gallery</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="tel:+91 9667261422
+
+
+"
+                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                  >
+                    +91 9667261422
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:info@ganpatievents.in
+
+"
+                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                  >
+                    info@ganpatievents.in
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                  >
+                  </a>
+                </li>
+              </ul>
+              <div class="flex sm:gap-4 gap-2">
+                <a href="#"
+                  ><img src="./assests1/img/insta.svg" alt="social"
+                /></a>
+                <a href="#"
+                  ><img width="22px" src="./assests1/img/fb.svg" alt="social"
+                /></a>
+                <a href="#"
+                  ><img src="./assests1/img/ri_twitter-fill.svg" alt="social"
+                /></a>
+                <a href="#"
+                  ><img src="./assests1/img/mdi_youtube.svg" alt="social"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="overlay"
+          class="fixed inset-0 bg-black opacity-50 hidden z-[2]"
+        ></div>
+
+        <!-- Content Below (for demo) -->
+        <div
+          class="absolute sm:top-[200px] top-[180px] md:top-[300px] left-0 right-0 z-[2] text-white text-center lg:text-[35px] sm:text-[28px] text-2xl !leading-[140%]"
+        >
+          <p class="text-center max-w-[550px] mx-auto">
+            Exclusive Priceless Decoration in
+            <span class="text-[#f5a42f] relative z-[999]">
+              Gurgaon
+              <span class="absolute -bottom-2.5 right-0 left-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 500 150"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    fill="white"
+                    d="M5,125.4c30.5-3.8,137.9-7.6,177.3-7.6c117.2,0,252.2,4.7,312.7,7.6"
+                  ></path>
+                  <path
+                    fill="white"
+                    d="M26.9,143.8c55.1-6.1,126-6.3,162.2-6.1c46.5,0.2,203.9,3.2,268.9,6.4"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </p>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="bg-white font-medium text-xs hover:py-2 hover:px-3 hover:text-[#ffffff] hover:bg-[#f5a42f] hover:text-sm duration-300 p-3 rounded-[12px] duration-300 text-[#f5a42f] italic"
+              >Let's Discuss On Your Event ..!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-">
+            <img
+              class="w-full object-cover h-full"
+              src="./assests1/img/slideimg.jpg"
+              alt="img"
+            />
+          </div>
+
+          <div class="swiper-slide bg-">
+            <img
+              class="w-full object-cover h-full"
+              src="./assests1/img/slider-2.jpg"
+              alt="img"
+            />
+          </div>
+          <div class="swiper-slide relative bg-">
+            <img
+              class="w-full object-cover h-full"
+              src="./assests1/img/slider-3.jpg"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1440px] mx-auto px-2.5 md:px-[90px] bg-white">
+        <div
+          class="bg-[#f5a42f] rounded-[30px] py-2.5 relative pb-12 rounded-b-[30px] pt-5 -mt-8 z-[1]"
+        >
+          <div class="flex justify-between px-4 sm:px-20 gap-3">
+            <div
+              class="xl:max-w-[190px] flex justify-center flex-col items-center"
+            >
+              <span class="bg-white rounded-[32px] p-2.5 text-base">
+                <img src="./assests1/img/timer.svg" alt="timer" />
+              </span>
+              <p class="text-white font-medium text-[13px] mt-5 text-center">
+                24/7 Availability
+              </p>
+            </div>
+            <div
+              class="xl:max-w-[190px] flex justify-center flex-col items-center"
+            >
+              <span class="bg-white rounded-[32px] p-2.5 text-base"
+                ><img src="./assests1/img/service.svg" alt="secvice"
+              /></span>
+              <p class="text-white font-medium text-[13px] mt-5 text-center">
+                25 + Service
+              </p>
+            </div>
+            <div
+              class="xl:max-w-[190px] flex justify-center flex-col items-center"
+            >
+              <span
+                class="bg-white rounded-[32px] p-2.5 text-base text-[#f5a42f]"
+                >8+</span
+              >
+              <p class="text-white font-medium text-[13px] mt-5 text-center">
+                8+ Years Experience
+              </p>
+            </div>
+          </div>
+          <div class="absolute bottom-[-0px] left-0 right-0">
+            <img
+              class="rounded-[22px] w-full rotate-180 h-[37px]"
+              src="./assests1/img/orange-bot.svg"
+              alt="a"
+            />
+          </div>
+        </div>
+      </div>
+      <section>
+        <div
+          class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto rounded-[22px] bg-white"
+        >
+          <span class="block max-w-[86px] mx-auto mt-16"
+            ><img width="100%" src="./assests1/img/ballon.webp" alt="balloon"
+          /></span>
+          <h1
+            class="text-[20px] mt-6 leading-[130%] text-center max-w-[500px] mx-auto"
+          >
+            About Us - Ganpati Events Gurgaon
+          </h1>
+          <p class="text-xs leading-[165%] text-[#111111] mt-6">
+            Welcome to Ganpati Events, your one-stop destination for exceptional
+            and Best balloon decoration in Gurgaon! With years of expertise in
+            crafting unforgettable experiences, we specialize in creating
+            stunning, custom-themed balloon decorations for all occasions.
+            Whether it’s a birthday party, wedding, corporate event, baby
+            shower, or any special celebration, our team is dedicated to
+            transforming your vision into reality.
+          </p>
+          <p class="text-xs leading-[165%] text-[#111111] mt-6">
+            At Ganpati Events, we believe every event tells a story, and our
+            balloon decorations add color, vibrancy, and joy to make your
+            moments truly memorable. From elegant arches and eye-catching
+            backdrops to creative table centerpieces and photo booths, we use
+            high-quality materials and innovative designs to ensure your event
+            stands out.
+          </p>
+          <div class="text-center mt-10">
+            <a
+              href="#"
+              class="bg-[#f5a42f] text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+              >Get In Touch</a
+            >
+          </div>
+          <span class="block max-w-[86px] mx-auto mt-16"
+            ><img width="100%" src="./assests1/img/ballon.webp" alt="balloon"
+          /></span>
+          <h1
+            class="text-[20px] leading-[130%] text-center max-w-[800px] mx-auto"
+          >
+            Best Balloon Decoration in Gurgaon Packages
+          </h1>
+          <div
+            class="flex flex-wrap mt-10 justify-center md:justify-start gap-5 gap-y-5 w-full"
+          >
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="https://ganpatievents.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-17.35.52_87475d9f.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        25%Off
+                      </p>
+                      <img src="./assests1/img/like.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Lohari Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px] object-cover"
+                      src="./assests1/img/card-2.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        2170 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Affordale Luxury Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px] object-cover"
+                      src="/assests1/img/card-3.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        1415 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Baby Shower Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="./assests1/img/card-3.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        1380 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Welcome Baby & Boy Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="/assests1/img/card-4.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        950 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Anniversery Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="./assests1/img/card-5.png"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        820 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Couple Room Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="./assests1/img/card-7.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        1420 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Bride to Be Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+            >
+              <div class="justify-between flex flex-col h-full">
+                <div>
+                  <div class="">
+                    <img
+                      class="w-full rounded-[12px] object-cover max-h-[282px]"
+                      src="./assests1/img/card-8.jpg"
+                      alt="lohri-img"
+                    />
+                  </div>
+                  <div class="flex justify-between m-2.5">
+                    <div class="flex">
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/4.5star.svg" alt="1" />
+                      <img src="./assests1/img/half-str.svg" alt="1" />
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <p class="font-medium text-[11px] text-[#1f1f1f]">
+                        228 pepole Watch
+                      </p>
+                      <img src="./assests1/img/view.svg" alt="img" />
+                    </div>
+                  </div>
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                    Car Boot Decoration
+                  </p>
+                </div>
+                <div class="flex justify-between items-center sm:p-2.5">
+                  <a
+                    href="#"
+                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    >whatsapp Chat</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                  >
+                    Call To Book</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="max-w-[1440px] mx-auto px-2.5 2xl:px-10">
+      <div class="text-end mt-3">
+        <a
+          href="#"
+          class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+          >View All Services</a
+        >
+      </div>
+    </div>
+    <section>
+      <div class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto bg-white pb-6">
+        <h1
+          class="text-[20px] leading-[130%] text-center mt-4 max-w-[800px] mx-auto pt-3"
+        >
+          Why Choose Ganpati Events?
+        </h1>
+        <ul class="mt-10 list-disc ml-4">
+          <li class="text-xs text-[#111111] !leading-[160%]">
+            <span class="font-bold"> Expert Balloon Artists:</span> Our skilled
+            professionals bring creativity and precision to every project.
+          </li>
+          <li class="text-xs text-[#111111] !leading-[160%]">
+            <span class="font-bold"> Customized Themes:</span>Tailored
+            decorations to match your unique style and preferences.
+          </li>
+          <li class="text-xs text-[#111111] !leading-[160%]">
+            <span class="font-bold"> Timely Execution: </span>Punctual service
+            that ensures your event is ready on time.
+          </li>
+          <li class="text-xs text-[#111111] !leading-[160%]">
+            <span class="font-bold"> Affordable Packages:</span>Premium quality
+            balloon decoration services at competitive prices in Gurgaon.
+          </li>
+        </ul>
+        <p class="text-xs text-[#111111] !leading-[160%] mt-10">
+          We take pride in being a trusted name for best decoration in Gurgaon,
+          delivering excellence and exceeding client expectations. Let Ganpati
+          Events turn your celebrations into cherished memories with our
+          artistic and vibrant balloon décor.
+        </p>
+
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+            >Get In Touch</a
+          >
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto bg-white mt-5">
+        <div class="flex justify-between items-center py-32 relative">
+          <div class="max-w-[87px] absolute left-0">
+            <img width="100%" src="./assests1/img/ballon.webp" alt="ballon" />
+          </div>
+          <div
+            class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl leading-[130%] text-center mx-auto text-[#54595f] relative"
+          >
+            <span class="block leading-[130%]"> Elegant</span>
+            <span class="block leading-[130%]">Birhday</span>
+            <span class="block leading-[130%]">Decoration</span>
+            <span
+              class="sm:max-w-[187px] max-w-[137px] absolute -right-20 lg:-right-48 -top-20"
+            >
+              <img
+                width="100%"
+                src="./assests1/img/3-baloon.gif"
+                alt="ballon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
+    <script>
+      // JavaScript for opening and closing the sidebar
+      const menuIcon = document.getElementById("menu-icon");
+      const sidebar = document.getElementById("sidebar");
+      const closeSidebar = document.getElementById("close-sidebar");
+      const overlay = document.getElementById("overlay");
+      const body = document.getElementsByTagName("body")[0];
+
+      // Open sidebar
+      const openSidebar = () => {
+        sidebar.classList.remove("translate-x-full");
+        sidebar.classList.add("translate-x-0");
+        overlay.classList.remove("hidden");
+        body.classList.add("overflow-hidden");
+      };
+
+      // Close sidebar
+      const closeSidebarFunc = () => {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+      };
+
+      // Event listeners
+      menuIcon.addEventListener("click", openSidebar);
+      closeSidebar.addEventListener("click", closeSidebarFunc);
+      overlay.addEventListener("click", closeSidebarFunc);
+    </script>
+  </body>
+</html>
