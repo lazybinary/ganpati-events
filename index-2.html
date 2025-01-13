@@ -3,93 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll Percentage Indicator</title>
+    <title>Scroll Icon</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Container for the scroll indicator */
-      #scroll-indicator-container {
+      .scroll-icon {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        width: 80px;
-        height: 80px;
+        height: 55px;
+        width: 120px;
+        background-color: #f5a42f;
+        border-radius: 50px 0 0 50px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        background-color: transparent;
-        border-radius: 50%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        padding-left: 10px;
       }
 
-      /* Circle background with black border */
-      #circle-background {
-        width: 100%;
-        height: 100%;
-        border: 3px dashed black; /* Fixed black circle border */
+      .circle {
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        position: relative;
+        background-color: #f5a42f;
+        border: 2px solid white;
         display: flex;
-        justify-content: center;
         align-items: center;
-      }
-
-      /* The yellow progress circle */
-      #circle-progress {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: conic-gradient(
-          #ffb64c 0% 0%,
-          #e0e0e0 0% 100%
-        ); /* Starts at 0% */
-      }
-
-      /* Percentage text inside the circle */
-      #percentage-text {
-        position: absolute;
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+        transition: border-color 0.2s ease;
       }
     </style>
   </head>
-  <body class="bg-gray-100">
-    <!-- Content of the page -->
-    <div class="h-[1500px]">
-      <h1 class="text-center py-20 text-3xl font-bold">
-        Scroll to see the percentage!
-      </h1>
+  <body class="bg-gray-100 h-[2000px]">
+    <div class="scroll-icon">
+      <div class="circle" id="scrollPercentage">0%</div>
     </div>
 
-    <!-- Scroll indicator container -->
-    <div id="scroll-indicator-container">
-      <div id="circle-background">
-        <div id="circle-progress"></div>
-        <div id="percentage-text">0%</div>
-      </div>
-    </div>
-
-    <!-- JavaScript to update the scroll indicator -->
     <script>
-      window.onscroll = function () {
-        var scrollPosition =
+      window.addEventListener("scroll", () => {
+        const scrollTop =
           document.documentElement.scrollTop || document.body.scrollTop;
-        var docHeight =
+        const docHeight =
           document.documentElement.scrollHeight -
           document.documentElement.clientHeight;
-        var scrollPercentage = (scrollPosition / docHeight) * 100;
+        const scrollPercent = Math.round((scrollTop / docHeight) * 100);
 
-        // Update the progress circle: adjust the angle based on the scroll percentage
-        var angle = (scrollPercentage / 100) * 360;
-        var progress = document.getElementById("circle-progress");
-        progress.style.background = `conic-gradient(#ffb64c ${angle}deg, #e0e0e0 ${angle}deg)`; // Adjust color fill
+        // Update scroll percentage text
+        document.getElementById(
+          "scrollPercentage"
+        ).innerText = `${scrollPercent}%`;
 
-        // Update the percentage text inside the circle
-        document.getElementById("percentage-text").textContent =
-          Math.round(scrollPercentage) + "%";
-      };
+        // Calculate border color from scroll percentage (white to black)
+        const borderColor = `rgb(${255 - scrollPercent}, ${scrollPercent}, 0)`;
+
+        // Apply the border color
+        document.querySelector(".circle").style.borderColor = borderColor;
+      });
     </script>
   </body>
 </html>
