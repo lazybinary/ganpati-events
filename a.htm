@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar with Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.23/dist/tailwind.min.css"></script>
+    <style>
+      /* Optional: Custom styles for the logo */
+      .logo {
+        max-width: 120px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div class="relative bg-white">
+      <!-- Navbar -->
+      <nav id="navbar" class="transition-all ease-in-out duration-300">
+        <div
+          class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[9] fixed top-0 left-0 right-0"
+        >
+          <div
+            class="flex justify-between items-center bg-white box-shadow-main rounded-[22px] p-[6.5px] gap-3"
+          >
+            <div class="md:max-w-[188px] max-w-[80px]">
+              <a href="#">
+                <img
+                  class="w-full"
+                  src="./assests1/img/logo.2.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <h2
+              class="text-[#2c2c2c] lg:text-[19px] sm:text-base text-sm font-medium text-center"
+            >
+              Buy Happy Lohari Offer up to 25% off
+            </h2>
+            <div
+              id="menu-icon"
+              class="bg-[#ffb64c] p-[15px] rounded-[32px] hover:bg-[gray] duration-300 cursor-pointer lg:mr-[76px] mr-4"
+            >
+              <img src="./assests1/img/menu-svg.svg" alt="menu-svg" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="fixed top-0 right-0 h-full w-[320px] sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[11] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
+      >
+        <div class="border-l-[#f5a42f] mx-4 border-l-[5px]">
+          <div class="flex justify-between items-center p-5">
+            <div class="max-w-[120px]">
+              <img width="100%" src="./assests1/img/logo.2.png" alt="" />
+            </div>
+            <button id="close-sidebar" class="text-white text-2xl">
+              &times;
+            </button>
+          </div>
+          <div class="p-5">
+            <ul>
+              <li>
+                <a href="#" class="block py-2 text-[#f5a42f] text-xl"
+                  >Ganpati Events Gurgoan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Corporate Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Couple Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Occasion Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Birthday Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+91 9667261422"
+                  class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                  >+91 9667261422</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@ganpatievents.in"
+                  class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                  >info@ganpatievents.in</a
+                >
+              </li>
+            </ul>
+            <div class="flex sm:gap-4 gap-2">
+              <a href="#"
+                ><img src="./assests1/img/insta.svg" alt="social"
+              /></a>
+              <a href="#"
+                ><img width="22px" src="./assests1/img/fb.svg" alt="social"
+              /></a>
+              <a href="#"
+                ><img src="./assests1/img/ri_twitter-fill.svg" alt="social"
+              /></a>
+              <a href="#"
+                ><img src="./assests1/img/mdi_youtube.svg" alt="social"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black opacity-50 hidden z-[2]"
+      ></div>
+
+      <!-- Content Below -->
+      <div
+        class="absolute sm:top-[200px] top-[180px] md:top-[300px] left-0 right-0 z-[2] text-white text-center lg:text-[35px] sm:text-[28px] text-2xl !leading-[140%]"
+      >
+        <p class="text-center max-w-[550px] mx-auto">
+          Exclusive Priceless Decoration in
+          <span class="text-[#f5a42f] relative z-[999]">Gurgaon</span>
+        </p>
+        <div class="mt-8">
+          <a
+            href="#"
+            class="bg-white font-medium text-xs hover:py-2 hover:px-3 hover:text-[#ffffff] hover:bg-[#f5a42f] hover:text-sm duration-300 p-3 rounded-[12px] duration-300 text-[#f5a42f] italic"
+          >
+            Let's Discuss On Your Event ..!
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
