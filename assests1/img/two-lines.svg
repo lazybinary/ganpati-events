@@ -2,6 +2,7 @@
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 500 150"
   preserveAspectRatio="none"
+  fill="white"
 >
   <path
     d="M5,125.4c30.5-3.8,137.9-7.6,177.3-7.6c117.2,0,252.2,4.7,312.7,7.6"
