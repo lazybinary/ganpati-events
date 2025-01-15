@@ -19,9 +19,10 @@
     <!-- Swiper -->
     <div class="bg-white pb-5">
       <div class="relative bg-white">
-        <nav>
+        <!-- Navbar -->
+        <nav id="navbar" class="transition-all ease-in-out duration-300">
           <div
-            class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[3] fixed top-0 left-0 right-0"
+            class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[9] fixed top-0 left-0 right-0"
           >
             <div
               class="flex justify-between items-center bg-white box-shadow-main rounded-[22px] p-[6.5px] gap-3"
@@ -38,11 +39,11 @@
               <h2
                 class="text-[#2c2c2c] lg:text-[19px] sm:text-base text-sm font-medium text-center"
               >
-                Buy Happy Lohari Offer up to 25% off
+                Buy Happy Holi Offer up to 25% off
               </h2>
               <div
-                class="bg-[#ffb64c] p-[15px] rounded-[32px] hover:bg-[gray] duration-300 cursor-pointer lg:mr-[76px] mr-4"
                 id="menu-icon"
+                class="bg-[#ffb64c] p-[15px] rounded-[32px] hover:bg-[gray] duration-300 cursor-pointer lg:mr-[76px] mr-4"
               >
                 <img src="./assests1/img/menu-svg.svg" alt="menu-svg" />
               </div>
@@ -52,7 +53,7 @@
         <!-- Sidebar -->
         <div
           id="sidebar"
-          class="fixed top-0 right-0 h-full w-[320px] sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
+          class="fixed top-0 right-0 h-full w-[320px] sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[11] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
         >
           <div class="border-l-[#f5a42f] mx-4 border-l-[5px]">
             <div class="flex justify-between items-center p-5">
@@ -67,7 +68,7 @@
               <ul>
                 <li>
                   <a href="#" class="block py-2 text-[#f5a42f] text-xl"
-                    >Event Balloon Decoration Gurgoan</a
+                    >Ganpati Events Gurgoan</a
                   >
                 </li>
                 <li>
@@ -77,18 +78,16 @@
                     >Home</a
                   >
                 </li>
-
                 <li>
                   <a
                     href="#"
                     class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                  >
-                    Corporate Decoration</a
+                    >Corporate Decoration</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#coupleroom"
                     class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
                     >Couple Decoration</a
                   >
@@ -111,8 +110,8 @@
                   <a
                     href="#"
                     class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >About Us
-                  </a>
+                    >About Us</a
+                  >
                 </li>
                 <li>
                   <a
@@ -125,39 +124,22 @@
                   <a
                     href="#"
                     class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
+                    >Gallery</a
                   >
-                    Gallery</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="tel:+91 9667261422
-
-
-"
-                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
-                  >
-                    +91 9667261422
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="mailto:info@ganpatievents.in
-
-"
-                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
-                  >
-                    info@ganpatievents.in
-                  </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="tel:+91 9667261422"
                     class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                    >+91 9667261422</a
                   >
-                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@ganpatievents.in"
+                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                    >info@ganpatievents.in</a
+                  >
                 </li>
               </ul>
               <div class="flex sm:gap-4 gap-2">
@@ -177,43 +159,29 @@
             </div>
           </div>
         </div>
+        <!-- Overlay -->
         <div
           id="overlay"
-          class="fixed inset-0 bg-black opacity-50 hidden z-[2]"
+          class="fixed inset-0 bg-black opacity-50 hidden z-[3]"
         ></div>
-        <!-- Content Below (for demo) -->
+        <!-- Content Below -->
         <div
           class="absolute sm:top-[200px] top-[180px] md:top-[300px] left-0 right-0 z-[2] text-white text-center lg:text-[35px] sm:text-[28px] text-2xl !leading-[140%]"
         >
           <p class="text-center max-w-[550px] mx-auto">
             Exclusive Priceless Decoration in
-            <span class="text-[#f5a42f] relative z-[999]">
-              Gurgaon
-              <span class="absolute -bottom-2.5 right-0 left-0">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 500 150"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    fill="white"
-                    d="M5,125.4c30.5-3.8,137.9-7.6,177.3-7.6c117.2,0,252.2,4.7,312.7,7.6"
-                  ></path>
-                  <path
-                    fill="white"
-                    d="M26.9,143.8c55.1-6.1,126-6.3,162.2-6.1c46.5,0.2,203.9,3.2,268.9,6.4"
-                  ></path>
-                </svg>
-              </span>
-            </span>
+            <span class="text-[#f5a42f] relative z-[999]">Gurgaon</span>
           </p>
+          <!-- replace -->
           <div class="mt-8">
             <a
               href="#"
-              class="bg-white font-medium text-xs hover:py-2 hover:px-3 hover:text-[#ffffff] hover:bg-[#f5a42f] hover:text-sm duration-300 p-3 rounded-[12px] duration-300 text-[#f5a42f] italic"
-              >Let's Discuss On Your Event ..!</a
+              class="bg-white font-medium text-xs p-3 rounded-[12px] hover:bg-transparent border hover:text-white duration-300 text-[#f5a42f] italic"
             >
+              Let's Discuss On Your Event ..!
+            </a>
           </div>
+          <!-- replace -->
         </div>
       </div>
       <div class="swiper mySwiper !w-[100%] !h-[564px]">
@@ -321,7 +289,7 @@
           <div class="text-center mt-10">
             <a
               href="#"
-              class="bg-[#f5a42f] text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+              class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] rounded-[5px] hover:text-[#f5a42f] border-[#f5a42f] border duration-300 hover:bg-transparent"
               >Get In Touch</a
             >
           </div>
@@ -344,8 +312,10 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="https://ganpatievents.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-17.35.52_87475d9f.jpg"
-                      alt="lohri-img"
+                      src="./assests1/img/card-6.jpg"
+                      alt="Bride to Be Decoration
+
+"
                     />
                   </div>
                   <div class="flex justify-between m-2.5">
@@ -364,18 +334,20 @@
                     </div>
                   </div>
                   <p class="text-[20px] font-medium text-[#54595f] text-center">
-                    Lohari Decoration
+                    Bride to Be Decoration
                   </p>
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -415,13 +387,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -436,8 +410,8 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px] object-cover"
-                      src="/assests1/img/card-3.jpg"
-                      alt="lohri-img"
+                      src="./assests1/img/baby-shower-10.webp"
+                      alt="baby-shower-img"
                     />
                   </div>
                   <div class="flex justify-between m-2.5">
@@ -461,13 +435,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -482,7 +458,7 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="./assests1/img/card-3.jpg"
+                      src="./assests1/img/welcome-baby-card.webp"
                       alt="lohri-img"
                     />
                   </div>
@@ -501,19 +477,24 @@
                       <img src="./assests1/img/view.svg" alt="img" />
                     </div>
                   </div>
-                  <p class="text-[20px] font-medium text-[#54595f] text-center">
+                  <p
+                    id="babywelcome"
+                    class="text-[20px] font-medium text-[#54595f] text-center"
+                  >
                     Welcome Baby & Boy Decoration
                   </p>
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -528,8 +509,8 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="/assests1/img/card-4.jpg"
-                      alt="lohri-img"
+                      src="./assests1/img/anniversary-1.webp"
+                      alt="anniversary-decoration-img"
                     />
                   </div>
                   <div class="flex justify-between m-2.5">
@@ -553,13 +534,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -567,6 +550,7 @@
               </div>
             </div>
             <div
+              id="coupleroom"
               class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
@@ -574,7 +558,7 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="./assests1/img/card-5.png"
+                      src="./assests1/img/couple-room-deco.webp"
                       alt="lohri-img"
                     />
                   </div>
@@ -599,13 +583,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -620,7 +606,7 @@
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="./assests1/img/card-7.jpg"
+                      src="./assests1/img/bride-to-be.webp"
                       alt="lohri-img"
                     />
                   </div>
@@ -645,13 +631,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -691,13 +679,15 @@
                 </div>
                 <div class="flex justify-between items-center sm:p-2.5">
                   <a
-                    href="#"
-                    class="text-xs px-3 py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
+                    href="http://wa.me/+918801504661"
+                    target="_blank"
+                    class="text-xs px-2 sm:px-3 py-1.5 sm:py-2 text-white bg-[#117704] rounded-[5px] hover:bg-transparent hover:text-[#117704] border-[2px] border-solid border-[#117704] duration-300"
                     >whatsapp Chat</a
                   >
                   <a
-                    href="#"
-                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b]"
+                    href="tel:+918801504661"
+                    target="_blank"
+                    class="bg-[#eb0b0b] text-[#e4e8ee] text-xs hover:border-[#eb0b0b] px-2 sm:px-3 py-1.5 sm:py-2 rounded-[3px] hover:text-[#eb0b0b] hover:bg-transparent border border-[#eb0b0b] duration-300"
                   >
                     Call To Book</a
                   >
@@ -712,7 +702,7 @@
       <div class="text-end mt-3">
         <a
           href="#"
-          class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+          class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] hover:text-[#f5a42f] hover:bg-transparent border border-[#f5a42f] duration-300"
           >View All Services</a
         >
       </div>
@@ -752,7 +742,7 @@
         <div class="text-center mt-10">
           <a
             href="#"
-            class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+            class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] rounded-[5px] hover:text-[#f5a42f] border-[#f5a42f] border duration-300 hover:bg-transparent"
             >Get In Touch</a
           >
         </div>
@@ -848,620 +838,772 @@
             </div>
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 hidden gap-2.5 paragraphs"
+            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
             id="paragraph1"
           >
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-welcome-baby.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-5.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-9.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-16.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-20.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-24.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px]" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-happy-birthday.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-6.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-10.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-13.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-17.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-21.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-3.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-7.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-11.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-14.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-18.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-22.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-25.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-4.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-8.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-12.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-15.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-19.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-23.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-26.webp"
-                  alt=""
-              /></a>
-            </div>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-welcome-baby.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-5.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-9.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-12.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-20.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-24.webp"
+                alt=""
+            /></a>
+            <a class="max-w-[347.5px] lg:max-w-[500px] xl:w-full" href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-happy-birthday.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-6.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-10.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-13.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-15.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-21.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-3.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-7.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-11.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-10.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-11.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-22.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-25.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-4.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-8.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-12.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-15.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-9.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-23.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-26.webp"
+                alt=""
+            /></a>
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 hidden gap-2.5 paragraphs"
+            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
             id="paragraph2"
           >
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-1.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-2.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-3.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-4.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-5.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-6.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-7.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-8.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-9.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-10.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-11.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-12.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-13.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-14.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-15.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-16.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-17.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-18.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-19.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-20.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-21.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-22.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/birthday-dec-23.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/ganpati-event-24.webp"
-                  alt=""
-              /></a>
-            </div>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-1.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-2.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-3.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-4.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-5.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-6.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-7.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-8.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-9.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-10.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-11.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-12.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-13.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-14.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-15.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-16.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-17.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-18.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-19.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-20.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-21.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-22.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/birthday-dec-23.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/ganpati-event-24.webp"
+                alt=""
+            /></a>
           </div>
           <div
-            class="paragraphs p-2.5 grid grid-cols-2 md:grid-cols-4 hidden gap-2.5"
+            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
             id="paragraph3"
           >
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-1.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-2.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-3.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-4.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-5.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-6.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-7.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-8.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-9.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-10.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-11.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-12.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-13.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-14.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-15.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-16.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-17.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-18.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-19.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/anniversary-20.webp"
-                  alt=""
-              /></a>
-            </div>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-1.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-2.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-3.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-4.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-5.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-6.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-7.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-8.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-9.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-10.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-11.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-12.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-13.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-14.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-15.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-16.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-17.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-18.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-19.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/anniversary-20.webp"
+                alt=""
+            /></a>
           </div>
           <div
-            class="paragraphs p-2.5 grid grid-cols-2 md:grid-cols-4 hidden gap-2.5"
+            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
             id="paragraph4"
           >
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-1.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-2.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-3.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-4.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-5.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-6.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px]" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-7.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-8.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-9.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-10.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-11.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-12.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-13.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-14.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-15.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-16.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-17.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-18.webp"
-                  alt=""
-              /></a>
-            </div>
-            <div class="grid gap-2.5">
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-19.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-20.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-21.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-22.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-23.webp"
-                  alt=""
-              /></a>
-              <a class="max-w-[347.5px] h-auto" href="#"
-                ><img
-                  class="w-100 rounded-2xl h-[100%] object-cover"
-                  src="./assests1/img/baby-shower-24.webp"
-                  alt=""
-              /></a>
-            </div>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-1.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-2.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-3.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-4.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-5.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-6.webp"
+                alt=""
+            /></a>
+            <a class="max-w-[347.5px] lg:max-w-[500px] xl:w-full" href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-7.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-8.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-9.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-10.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-11.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-12.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-13.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-14.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-15.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-16.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-17.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-18.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-19.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-20.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-21.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-22.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-23.webp"
+                alt=""
+            /></a>
+            <a
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
+              href="#"
+              ><img
+                class="w-full rounded-2xl h-[100%] object-cover"
+                src="./assests1/img/baby-shower-24.webp"
+                alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -1525,10 +1667,10 @@
           </div>
           <div>
             <a
-              class="text-[12px] text-white font-medium bg-[#F5A42F] px-3 py-2 rounded-[5px] inline hover:py-1.5 hover:px-4 text-[#ffffff] hover:text-sm duration-300 hover:shadow-lg"
+              href="#"
+              class="bg-[#f5a42f] text-white text-xs px-3 py-2 rounded-[5px] rounded-[5px] hover:text-[#f5a42f] border-[#f5a42f] border duration-300 hover:bg-transparent"
+              >Write a review</a
             >
-              Write a review
-            </a>
           </div>
         </div>
         <div class="w-[100%] md:w-[50%] lg:p-2.5">
@@ -1544,7 +1686,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -1718,7 +1860,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -1894,7 +2036,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -2069,7 +2211,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -2242,7 +2384,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -2419,7 +2561,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -2592,7 +2734,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -2766,7 +2908,7 @@
                         <div class="flex items-center relative">
                           <div class="absolute top-0 right-0 w-5">
                             <img
-                              class="w-100"
+                              class="w-full"
                               src="./assests1/img/google logo.png"
                               alt=""
                             />
@@ -3199,7 +3341,7 @@
             <p class="text-xl text-[#54595f]">Frequently answer Questions?</p>
           </div>
           <div class="flex flex-wrap md:flex-nowrap gap-0 md:gap-5 py-[10px]">
-            <div class="w-100 md:w-[50%]">
+            <div class="w-full md:w-[50%]">
               <button
                 class="toggle-button w-full bg-[#f3f3f3] border-[1px] border-[#04000E] border-opacity-[16%] items-center rounded-[12px] mb-5"
               >
@@ -3442,7 +3584,7 @@
                 </p>
               </button>
             </div>
-            <div class="w-100 md:w-[50%]">
+            <div class="w-full md:w-[50%]">
               <button
                 class="toggle-button w-full bg-[#f3f3f3] border-[1px] border-[#04000E] border-opacity-[16%] items-center rounded-[12px] mb-5"
               >
@@ -3676,7 +3818,7 @@
               class="flex flex-col w-[100%] min-[556px]:w-[48%] sm:w-[45%] md:w-[40%] lg:w-[26.45%] sm:p-2.5 gap-3 md:gap-5"
             >
               <a class="max-w-[145px]" href="#"
-                ><img class="w-100" src="./assests1/img/logo.2.png" alt=""
+                ><img class="w-full" src="./assests1/img/logo.2.png" alt=""
               /></a>
               <p class="text-xl text-[#363636]">
                 Ballon Decoration events Gurgoan
@@ -3691,46 +3833,58 @@
             >
               <p class="text-xl text-black">Our Service</p>
               <ul class="list-none p-0">
-                <li class="pb-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]">
-                  <span>Birthday decoration </span>
+                <li
+                  class="pb-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
+                >
+                  <a href="#tab2" onclick="showParagraph(2)"
+                    >Birthday decoration
+                  </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Anniversery decoration </span>
+                  <a href="#tab3" onclick="showParagraph(3)"
+                    >Anniversery decoration
+                  </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Baby Shower decoration </span>
+                  <a href="#tab4" onclick="showParagraph(4)"
+                    >Baby Shower decoration
+                  </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Corporate decoration </span>
+                  <a href="">Corporate decoration </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Couple Room decoration </span>
+                  <a href="#coupleroom">Couple Room decoration </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Haldhi Mehandi decoration </span>
+                  <a href="">Haldhi Mehandi decoration </a>
                 </li>
                 <li
-                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]"
+                  class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <span>Baby Welcome decoration </span>
+                  <a href="babywelcome">Baby Welcome decoration </a>
                 </li>
-                <li class="mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b]">
-                  <span>Birthday Home decoration</span>
+                <li
+                  class="mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
+                >
+                  <a href="#tab2" onclick="showParagraph(2)"
+                    >Birthday Home decoration</a
+                  >
                 </li>
               </ul>
             </div>
             <div
-              class="flex flex-col min-sm:p-2.5 w-100 sm:w-[80%] md:w-[60%] lg:w-[50.5%] gap-4 max-sm:mx-auto"
+              class="flex flex-col min-sm:p-2.5 w-full sm:w-[80%] md:w-[60%] lg:w-[50.5%] gap-4 max-sm:mx-auto"
             >
               <div
                 class="flex justify-between bg-[#ffb64c] rounded-3xl p-[3px] h-[50px]"
@@ -3750,9 +3904,9 @@
                 </button>
               </div>
               <div>
-                <div class="mapouter relative text-right w-100 h-[185px]">
+                <div class="mapouter relative text-right w-full h-[185px]">
                   <div
-                    class="gmap_canvas overflow-hidden bg-none w-100 h-[185px] rounded-2xl"
+                    class="gmap_canvas overflow-hidden bg-none w-full h-[185px] rounded-2xl"
                   >
                     <iframe
                       class="gmap_iframe h-[185px]"
@@ -3887,8 +4041,15 @@
         </a>
       </div>
     </div>
-    <div class="scroll-icon hidden sm:block">
-      <div class="circle" id="scrollPercentage">0%</div>
+    <div
+      class="scroll-icon hidden sm:block fixed bottom-2.5 right-0 h-[65px] w-[80px] bg-[#F5A42F] rounded-l-[50px] flex items-center pl-2.5 z-[99999999999]"
+    >
+      <div
+        class="w-[50px] h-[50px] rounded-[50%] bg-[#F5A42F] border-[2px] border-solid border-[#fff] flex items-center justify-center text-white text-xs duration-300 mt-[8px] circle"
+        id="scrollPercentage"
+      >
+        0%
+      </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -3902,34 +4063,45 @@
           disableOnInteraction: false,
         },
         loop: true,
+        allowTouchMove: false,
+        simulateTouch: false,
+        clickable: false,
       });
     </script>
     <!-- side bar -->
     <script>
-      // JavaScript for opening and closing the sidebar
+      // Get elements
       const menuIcon = document.getElementById("menu-icon");
+      const closeSidebarBtn = document.getElementById("close-sidebar");
       const sidebar = document.getElementById("sidebar");
-      const closeSidebar = document.getElementById("close-sidebar");
       const overlay = document.getElementById("overlay");
+      const navbar = document.getElementById("navbar");
       const body = document.getElementsByTagName("body")[0];
-      // Open sidebar
-      const openSidebar = () => {
+      // const body = document.getElementById("opacity-40");
+
+      // Toggle sidebar visibility
+      menuIcon.addEventListener("click", () => {
         sidebar.classList.remove("translate-x-full");
-        sidebar.classList.add("translate-x-0");
         overlay.classList.remove("hidden");
+        navbar.classList.add("hidden");
         body.classList.add("overflow-hidden");
-      };
+      });
+
       // Close sidebar
-      const closeSidebarFunc = () => {
-        sidebar.classList.remove("translate-x-0");
+      closeSidebarBtn.addEventListener("click", () => {
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
+        navbar.classList.remove("hidden");
         body.classList.remove("overflow-hidden");
-      };
-      // Event listeners
-      menuIcon.addEventListener("click", openSidebar);
-      closeSidebar.addEventListener("click", closeSidebarFunc);
-      overlay.addEventListener("click", closeSidebarFunc);
+      });
+
+      // Close sidebar if overlay is clicked
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        navbar.classList.remove("hidden");
+        body.classList.remove("overflow-hidden");
+      });
     </script>
     <script>
       const buttons = document.querySelectorAll(".toggle-button");
