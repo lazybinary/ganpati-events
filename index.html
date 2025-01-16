@@ -20,14 +20,14 @@
     />
     <link rel="stylesheet" href="./assests1/style/style.css" />
   </head>
-  <body>
+  <body id="body">
     <!-- Swiper -->
     <div class="bg-white pb-5">
       <div class="relative bg-white">
         <!-- Navbar -->
         <nav id="navbar" class="transition-all ease-in-out duration-300">
           <div
-            class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[9] fixed top-0 left-0 right-0"
+            class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto py-2.5 z-[3] fixed top-0 left-0 right-0"
           >
             <div
               class="flex justify-between items-center bg-white box-shadow-main rounded-[22px] p-[6.5px] gap-3"
@@ -905,760 +905,886 @@
         </div>
         <div class="flex flex-col gap-2.5">
           <div class="overflow-x-auto scroll-hide">
-            <div class="flex gap-[10px] min-w-[800px] mb-1">
+            <div class="flex gap-[10px] min-w-[800px] mb-1 tabs">
               <button
-                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-active"
-                id="tab1"
-                onclick="showParagraph(1)"
+                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn active"
+                onclick="openTab(0)"
               >
                 Balloon Decoration
               </button>
               <button
-                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-active"
-                id="tab2"
-                onclick="showParagraph(2)"
+                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
+                onclick="openTab(1)"
               >
                 Birthday Decoration
               </button>
               <button
-                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-active"
-                id="tab3"
-                onclick="showParagraph(3)"
+                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
+                onclick=" openTab(2)"
               >
-                Anniversery Decoration
+                Anniversary Decoration
               </button>
               <button
-                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-active"
-                id="tab4"
-                onclick="showParagraph(4)"
+                class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
+                onclick="openTab(3)"
               >
                 Baby Shower Decoration
               </button>
             </div>
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
-            id="paragraph1"
+            class="tab-content p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5"
+            id="gallery-tab-1"
           >
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] rounded-2xl lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 0)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-1.webp"
-                alt=""
+                alt="Image 1"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 1)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-2.webp"
-                alt=""
+                alt="Image 2"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 2)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-3.webp"
-                alt=""
+                alt="Image 3"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 3)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-4.webp"
-                alt=""
+                alt="Image 4"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 4)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-5.webp"
-                alt=""
+                alt="Image 5"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 5)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-6.webp"
-                alt=""
+                alt="Image 6"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 6)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-7.webp"
-                alt=""
+                alt="Image 7"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 7)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-8.webp"
-                alt=""
+                alt="Image 8"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 8)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-9.webp"
-                alt=""
+                alt="Image 9"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 9)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-10.webp"
-                alt=""
+                alt="Image 10"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 10)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-11.webp"
-                alt=""
+                alt="Image 11"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 11)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-12.webp"
-                alt=""
+                alt="Image 12"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 12)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-13.webp"
-                alt=""
+                alt="Image 13"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 13)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-14.webp"
-                alt=""
+                alt="Image 14"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 14)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-15.webp"
-                alt=""
+                alt="Image 15"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 15)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-16.webp"
-                alt=""
+                alt="Image 16"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 16)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-17.webp"
-                alt=""
+                alt="Image 17"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 17)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-18.webp"
-                alt=""
+                alt="Image 18"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 18)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-19.webp"
-                alt=""
+                alt="Image 19"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 19)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/balloon-dec-20.webp"
-                alt=""
+                alt="Image 20"
             /></a>
+            <!-- Additional images for tab 1 -->
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
-            id="paragraph2"
+            class="tab-content p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5"
+            id="gallery-tab-2"
           >
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl image-item"
               href="#"
+              onclick="openModal(event, 0)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-1.webp"
-                alt=""
+                alt="Image 21"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 1)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-2.webp"
-                alt=""
+                alt="Image 22"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 2)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-3.webp"
-                alt=""
+                alt="Image 23"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 3)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-4.webp"
-                alt=""
+                alt="Image 24"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 4)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-5.webp"
-                alt=""
+                alt="Image 25"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 5)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-6.webp"
-                alt=""
+                alt="Image 26"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 6)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-7.webp"
-                alt=""
+                alt="Image 27"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 7)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-8.webp"
-                alt=""
+                alt="Image 28"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 8)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-9.webp"
-                alt=""
+                alt="Image 29"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 9)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-10.webp"
-                alt=""
+                alt="Image 30"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 10)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-11.webp"
-                alt=""
+                alt="Image 31"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 11)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-12.webp"
-                alt=""
+                alt="Image 32"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 12)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-13.webp"
-                alt=""
+                alt="Image 33"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 13)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-14.webp"
-                alt=""
+                alt="Image 34"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 14)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-15.webp"
-                alt=""
+                alt="Image 35"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 15)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-16.webp"
-                alt=""
+                alt="Image 36"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 16)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-17.webp"
-                alt=""
+                alt="Image 37"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 17)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-18.webp"
-                alt=""
+                alt="Image 38"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 18)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-19.webp"
-                alt=""
+                alt="Image 39"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 19)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-20.webp"
-                alt=""
+                alt="Image 40"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 20)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-21.webp"
-                alt=""
+                alt="Image 41"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 21)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-22.webp"
-                alt=""
+                alt="Image 42"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 22)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-23.webp"
-                alt=""
+                alt="Image 43"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 23)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/birthday-dec-24.webp"
-                alt=""
+                alt="Image 44"
             /></a>
+            <!-- Additional images for tab 2 -->
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
-            id="paragraph3"
+            class="tab-content p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5"
+            id="gallery-tab-3"
           >
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl image-item"
               href="#"
+              onclick="openModal(event, 0)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-1.webp"
-                alt=""
+                alt="Image 45"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 1)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-2.webp"
-                alt=""
+                alt="Image 46"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 2)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-3.webp"
-                alt=""
+                alt="Image 47"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 3)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-4.webp"
-                alt=""
+                alt="Image 48"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 4)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-5.webp"
-                alt=""
+                alt="Image 49"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 5)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-6.webp"
-                alt=""
+                alt="Image 50"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 6)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-7.webp"
-                alt=""
+                alt="Image 51"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 7)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-8.webp"
-                alt=""
+                alt="Image 52"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 8)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-9.webp"
-                alt=""
+                alt="Image 53"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 9)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-10.webp"
-                alt=""
+                alt="Image 54"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 10)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-11.webp"
-                alt=""
+                alt="Image 55"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 11)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-12.webp"
-                alt=""
+                alt="Image 56"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 12)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-13.webp"
-                alt=""
+                alt="Image 57"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 13)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-14.webp"
-                alt=""
+                alt="Image 58"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 14)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-15.webp"
-                alt=""
+                alt="Image 59"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 15)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-16.webp"
-                alt=""
+                alt="Image 60"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 16)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-17.webp"
-                alt=""
+                alt="Image 61"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 17)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-18.webp"
-                alt=""
+                alt="Image 62"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 18)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-19.webp"
-                alt=""
+                alt="Image 63"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 19)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/anniversary-20.webp"
-                alt=""
+                alt="Image 64"
             /></a>
+            <!-- Additional images for tab 3 -->
           </div>
           <div
-            class="p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5 paragraphs"
-            id="paragraph4"
+            class="tab-content p-2.5 grid grid-cols-2 md:grid-cols-4 grid-row-12 md:grid-row-6 hidden gap-2.5"
+            id="gallery-tab-4"
           >
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 0)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-1.webp"
-                alt=""
+                alt="Image 65"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 1)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-2.webp"
-                alt=""
+                alt="Image 66"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 2)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-3.webp"
-                alt=""
+                alt="Image 67"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 3)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-4.webp"
-                alt=""
+                alt="Image 68"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 4)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-5.webp"
-                alt=""
+                alt="Image 69"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 5)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-6.webp"
-                alt=""
+                alt="Image 70"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 6)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-7.webp"
-                alt=""
+                alt="Image 71"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 7)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-8.webp"
-                alt=""
+                alt="Image 72"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 8)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-9.webp"
-                alt=""
+                alt="Image 73"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 9)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-10.webp"
-                alt=""
+                alt="Image 74"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 10)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-11.webp"
-                alt=""
+                alt="Image 75"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 11)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-12.webp"
-                alt=""
+                alt="Image 76"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 12)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-13.webp"
-                alt=""
+                alt="Image 77"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 13)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-14.webp"
-                alt=""
+                alt="Image 78"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 14)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-15.webp"
-                alt=""
+                alt="Image 79"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 15)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-16.webp"
-                alt=""
+                alt="Image 80"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 16)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-17.webp"
-                alt=""
+                alt="Image 81"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 17)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-18.webp"
-                alt=""
+                alt="Image 82"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 18)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-19.webp"
-                alt=""
+                alt="Image 83"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 19)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-20.webp"
-                alt=""
+                alt="Image 84"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 20)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-21.webp"
-                alt=""
+                alt="Image 85"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 21)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-22.webp"
-                alt=""
+                alt="Image 86"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 22)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-23.webp"
-                alt=""
+                alt="Image 87"
             /></a>
             <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 rounded-2xl"
+              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0 image-item rounded-2xl"
               href="#"
+              onclick="openModal(event, 23)"
               ><img
                 class="w-full h-[100%] object-cover"
                 src="./assests1/img/baby-shower-24.webp"
-                alt=""
+                alt="Image 88"
             /></a>
+            <!-- Additional images for tab 4 -->
+          </div>
+          <!-- overlay img  -->
+          <div
+            id="overlay"
+            class="fixed inset-0 bg-black opacity-70 hidden z-[999999999999999999999]"
+            onclick="closeModal()"
+          ></div>
+          <div
+            id="imageModal"
+            class="fixed inset-0 flex items-center justify-center hidden z-[999999999999999999999]"
+          >
+            <div
+              class="relative max-w-[450px] max-h-[450px] bg-transparent rounded-lg"
+            >
+              <span
+                class="absolute top-2 right-2 min-[550px]:-top-16 min-[550px]:-right-16 min-[550px]:opacity-70 text-white text-3xl cursor-pointer h-6 w-6 min-[550px]:h-8 min-[550px]:w-8 flex flex-col justify-center items-center bg-[#f5a42f] rounded-lg"
+                onclick="closeModal()"
+                >×</span
+              >
+              <img
+                id="modalImage"
+                class="min-[300px]:w-[250px] min-[400px]:w-[350px] min-[550px]:w-[350px] sm:w-[500px] min-[300px]:h-[300px] min-[400px]:h-[350px] min-[550px]:h-[350px] sm:h-[500px] my-[auto] mx-auto rounded-lg px-0 rounded-2xl object-cover"
+                src=""
+                alt="Zoomed Image"
+              />
+              <button
+                class="absolute -left-20 max-[550px]:left-2 top-1/2 transform -translate-y-1/2 text-white font-extrabold text-xl w-7 h-7 min-[550px]:w-9 bg-[#f5a42f] min-[550px]:bg-opacity-70 min-[550px]:h-9 rounded-lg"
+                onclick="changeImage('prev')"
+              >
+                ›
+              </button>
+              <button
+                class="absolute -right-20 max-[550px]:right-2 top-1/2 transform -translate-y-1/2 text-white font-extrabold text-xl w-7 h-7 min-[550px]:w-9 bg-[#f5a42f] min-[550px]:bg-opacity-70 min-[550px]:h-9 rounded-lg"
+                onclick="changeImage('next')"
+              >
+                ‹
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -4238,41 +4364,179 @@
       });
     </script>
     <script>
-      function showParagraph(tabNumber) {
-        // Hide both paragraphs
-        document.getElementById("paragraph1").classList.add("hidden");
-        document.getElementById("paragraph2").classList.add("hidden");
-        document.getElementById("paragraph3").classList.add("hidden");
-        document.getElementById("paragraph4").classList.add("hidden");
+      // Image sets for each tab (4 tabs, 5 images per tab)
+      let currentIndex = null;
+      const images = [
+        [
+          "./assests1/img/balloon-dec-1.webp",
+          "./assests1/img/balloon-dec-2.webp",
+          "./assests1/img/balloon-dec-3.webp",
+          "./assests1/img/balloon-dec-4.webp",
+          "./assests1/img/balloon-dec-5.webp",
+          "./assests1/img/balloon-dec-6.webp",
+          "./assests1/img/balloon-dec-7.webp",
+          "./assests1/img/balloon-dec-8.webp",
+          "./assests1/img/balloon-dec-9.webp",
+          "./assests1/img/balloon-dec-10.webp",
+          "./assests1/img/balloon-dec-11.webp",
+          "./assests1/img/balloon-dec-12.webp",
+          "./assests1/img/balloon-dec-13.webp",
+          "./assests1/img/balloon-dec-14.webp",
+          "./assests1/img/balloon-dec-15.webp",
+          "./assests1/img/balloon-dec-16.webp",
+          "./assests1/img/balloon-dec-17.webp",
+          "./assests1/img/balloon-dec-18.webp",
+          "./assests1/img/balloon-dec-19.webp",
+          "./assests1/img/balloon-dec-20.webp",
+        ],
+        [
+          "./assests1/img/birthday-dec-1.webp",
+          "./assests1/img/birthday-dec-2.webp",
+          "./assests1/img/birthday-dec-3.webp",
+          "./assests1/img/birthday-dec-4.webp",
+          "./assests1/img/birthday-dec-5.webp",
+          "./assests1/img/birthday-dec-6.webp",
+          "./assests1/img/birthday-dec-7.webp",
+          "./assests1/img/birthday-dec-8.webp",
+          "./assests1/img/birthday-dec-9.webp",
+          "./assests1/img/birthday-dec-10.webp",
+          "./assests1/img/birthday-dec-11.webp",
+          "./assests1/img/birthday-dec-12.webp",
+          "./assests1/img/birthday-dec-13.webp",
+          "./assests1/img/birthday-dec-14.webp",
+          "./assests1/img/birthday-dec-15.webp",
+          "./assests1/img/birthday-dec-16.webp",
+          "./assests1/img/birthday-dec-17.webp",
+          "./assests1/img/birthday-dec-18.webp",
+          "./assests1/img/birthday-dec-19.webp",
+          "./assests1/img/birthday-dec-20.webp",
+          "./assests1/img/birthday-dec-21.webp",
+          "./assests1/img/birthday-dec-22.webp",
+          "./assests1/img/birthday-dec-23.webp",
+          "./assests1/img/birthday-dec-24.webp",
+        ],
+        [
+          "./assests1/img/anniversary-1.webp",
+          "./assests1/img/anniversary-2.webp",
+          "./assests1/img/anniversary-3.webp",
+          "./assests1/img/anniversary-4.webp",
+          "./assests1/img/anniversary-5.webp",
+          "./assests1/img/anniversary-6.webp",
+          "./assests1/img/anniversary-7.webp",
+          "./assests1/img/anniversary-8.webp",
+          "./assests1/img/anniversary-9.webp",
+          "./assests1/img/anniversary-10.webp",
+          "./assests1/img/anniversary-11.webp",
+          "./assests1/img/anniversary-12.webp",
+          "./assests1/img/anniversary-13.webp",
+          "./assests1/img/anniversary-14.webp",
+          "./assests1/img/anniversary-15.webp",
+          "./assests1/img/anniversary-16.webp",
+          "./assests1/img/anniversary-17.webp",
+          "./assests1/img/anniversary-18.webp",
+          "./assests1/img/anniversary-19.webp",
+          "./assests1/img/anniversary-20.webp",
+        ],
+        [
+          "./assests1/img/baby-shower-1.webp",
+          "./assests1/img/baby-shower-2.webp",
+          "./assests1/img/baby-shower-3.webp",
+          "./assests1/img/baby-shower-4.webp",
+          "./assests1/img/baby-shower-5.webp",
+          "./assests1/img/baby-shower-6.webp",
+          "./assests1/img/baby-shower-7.webp",
+          "./assests1/img/baby-shower-8.webp",
+          "./assests1/img/baby-shower-9.webp",
+          "./assests1/img/baby-shower-10.webp",
+          "./assests1/img/baby-shower-11.webp",
+          "./assests1/img/baby-shower-12.webp",
+          "./assests1/img/baby-shower-13.webp",
+          "./assests1/img/baby-shower-14.webp",
+          "./assests1/img/baby-shower-15.webp",
+          "./assests1/img/baby-shower-16.webp",
+          "./assests1/img/baby-shower-17.webp",
+          "./assests1/img/baby-shower-18.webp",
+          "./assests1/img/baby-shower-19.webp",
+          "./assests1/img/baby-shower-20.webp",
+          "./assests1/img/baby-shower-21.webp",
+          "./assests1/img/baby-shower-22.webp",
+          "./assests1/img/baby-shower-23.webp",
+          "./assests1/img/baby-shower-24.webp",
+        ],
+      ];
+      // Open Modal Function
+      function openModal(event, index) {
+        event.preventDefault();
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+        const modalImage = document.getElementById("modalImage");
 
-        if (tabNumber === 1) {
-          document.getElementById("paragraph1").classList.remove("hidden");
-          document.getElementById("tab1").classList.add("tab-active");
-          document.getElementById("tab2").classList.remove("tab-active");
-          document.getElementById("tab3").classList.remove("tab-active");
-          document.getElementById("tab4").classList.remove("tab-active");
-        } else if (tabNumber === 2) {
-          document.getElementById("paragraph2").classList.remove("hidden");
-          document.getElementById("tab2").classList.add("tab-active");
-          document.getElementById("tab1").classList.remove("tab-active");
-          document.getElementById("tab3").classList.remove("tab-active");
-          document.getElementById("tab4").classList.remove("tab-active");
-        } else if (tabNumber === 3) {
-          document.getElementById("paragraph3").classList.remove("hidden");
-          document.getElementById("tab3").classList.add("tab-active");
-          document.getElementById("tab1").classList.remove("tab-active");
-          document.getElementById("tab2").classList.remove("tab-active");
-          document.getElementById("tab4").classList.remove("tab-active");
-        } else if (tabNumber === 4) {
-          document.getElementById("paragraph4").classList.remove("hidden");
-          document.getElementById("tab4").classList.add("tab-active");
-          document.getElementById("tab1").classList.remove("tab-active");
-          document.getElementById("tab2").classList.remove("tab-active");
-          document.getElementById("tab3").classList.remove("tab-active");
-        }
+        // Set current index based on the tab and image clicked
+        const activeTabIndex = Array.from(
+          document.querySelectorAll(".tab-content")
+        ).findIndex((tab) => !tab.classList.contains("hidden"));
+        currentIndex = index;
+
+        // Set the image in modal
+        modalImage.src = images[activeTabIndex][currentIndex];
+        // Show the modal and overlay
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+        document.getElementById("body").classList.add("overflow-hidden");
       }
-      // by default
-      showParagraph(1);
+      // Close Modal Function
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+
+        // Hide the modal and overlay
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+        document.getElementById("body").classList.remove("overflow-hidden");
+      }
+      // Change Image Function (Next/Previous)
+      function changeImage(direction) {
+        const activeTabIndex = Array.from(
+          document.querySelectorAll(".tab-content")
+        ).findIndex((tab) => !tab.classList.contains("hidden"));
+        const totalImages = images[activeTabIndex].length;
+
+        if (direction === "next") {
+          currentIndex = (currentIndex + 1) % totalImages; // Loop to the first image
+        } else if (direction === "prev") {
+          currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Loop to the last image
+        }
+        document.getElementById("modalImage").src =
+          images[activeTabIndex][currentIndex];
+      }
+      // Function to handle tab switching and activating the corresponding tab
+      function openTab(tabIndex) {
+        // Get all tab buttons
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        // Remove the 'active' class from all tab buttons
+        tabButtons.forEach((button) => {
+          button.classList.remove("bg-[#f5a42f]", "text-white");
+          button.classList.add("bg-[#d1d5db]", "text-[#54595f]");
+        });
+        // Add the 'active' class to the clicked tab
+        tabButtons[tabIndex].classList.add("bg-[#f5a42f]", "text-white");
+        // Get all tab content containers
+        const tabContents = document.querySelectorAll(".tab-content");
+        // Hide all tab content containers
+        tabContents.forEach((content) => {
+          content.classList.add("hidden");
+        });
+
+        // Show the selected tab's content
+        const activeTabContent = document.getElementById(
+          `gallery-tab-${tabIndex + 1}`
+        );
+        activeTabContent.classList.remove("hidden");
+      }
+      // Initialize the first tab as active on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        openTab(0); // Open the first tab by default
+      });
     </script>
     <!-- per bar -->
     <script>
