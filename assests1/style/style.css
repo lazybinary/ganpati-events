@@ -25,10 +25,6 @@ body {
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.13),
     0px 0px 2px 0px rgba(0, 0, 0, 0.05);
 }
-.tab-active {
-  background-color: #f5a42f !important;
-  color: #fff !important;
-}
 .scroll-hide::-webkit-scrollbar {
   background: #d2d2d2 !important;
   height: 3px !important;
@@ -45,7 +41,6 @@ body {
   background: #f5a42f;
   border-radius: 10px;
 }
-
 .box-shadow-main {
   box-shadow: 0px 0px 4px 0px
     rgba(102.83230895996093, 102.83230895996093, 102.83230895996093, 0.5) inset;
