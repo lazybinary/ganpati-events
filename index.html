@@ -106,7 +106,7 @@
                   <li>
                     <a
                       onclick="birthdayFun()"
-                      href="#gallery-tab-2"
+                      href="#tab2"
                       class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
                       >Birthday Decoration</a
                     >
@@ -331,6 +331,7 @@
               </p>
             </div>
             <div
+              id="aboutus"
               class="xl:max-w-[190px] flex justify-center flex-col items-center"
             >
               <span class="bg-white rounded-[32px] p-2.5 text-lg text-[#f5a42f]"
@@ -353,7 +354,6 @@
       <!--      About Us - Event Balloon Decoration Gurgaon -->
       <section>
         <div
-          id="aboutus"
           class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto rounded-[22px] bg-white"
         >
           <span class="block max-w-[86px] mx-auto mt-16"
@@ -454,6 +454,7 @@
                 <div>
                   <div class="">
                     <img
+                      id="babywelcome"
                       class="w-full rounded-[12px] object-cover max-h-[282px] object-cover"
                       src="./assests1/img/card-2.jpg"
                       alt="lohri-img"
@@ -507,7 +508,7 @@
                       alt="baby-shower-img"
                     />
                   </div>
-                  <div class="flex justify-between m-2.5">
+                  <div id="coupleroom" class="flex justify-between m-2.5">
                     <div class="flex">
                       <img src="./assests1/img/4.5star.svg" alt="1" />
                       <img src="./assests1/img/4.5star.svg" alt="1" />
@@ -570,10 +571,7 @@
                       <img src="./assests1/img/view.svg" alt="img" />
                     </div>
                   </div>
-                  <p
-                    id="babywelcome"
-                    class="text-[20px] font-medium text-[#54595f] text-center"
-                  >
+                  <p class="text-[20px] font-medium text-[#54595f] text-center">
                     Welcome Baby & Boy Decoration
                   </p>
                 </div>
@@ -643,7 +641,6 @@
               </div>
             </div>
             <div
-              id="coupleroom"
               class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
@@ -832,7 +829,6 @@
           Decoration Events turn your celebrations into cherished memories with
           our artistic and vibrant balloon décor.
         </p>
-
         <div class="text-center mt-10">
           <a
             href="#"
@@ -872,6 +868,9 @@
     <div id="odecoration" class="max-w-[1520px] px-2 xl:px-10 mx-auto">
       <div class="py-[10px] flex flex-col gap-5">
         <div class="flex flex-col justify-center">
+          <span id="tab4"></span>
+          <span id="tab3"></span>
+          <span id="tab2"></span>
           <div class="max-w-[86px] mx-auto">
             <img
               decoding="async"
@@ -911,21 +910,18 @@
               <button
                 class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
                 onclick="openTab(1)"
-                id="tab2"
               >
                 Birthday Decoration
               </button>
               <button
                 class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
                 onclick=" openTab(2)"
-                id="tab3"
               >
                 Anniversary Decoration
               </button>
               <button
                 class="bg-[#d1d5db] text-[12px] p-[7px] rounded-[7px] text-[#54595f] tab-btn"
                 onclick="openTab(3)"
-                id="tab4"
               >
                 Baby Shower Decoration
               </button>
@@ -4045,7 +4041,7 @@
                 <li
                   class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <a href="#tab4" onclick="openTab(3)"
+                  <a onclick="openTab(3)" href="#tab4"
                     >Baby Shower decoration
                   </a>
                 </li>

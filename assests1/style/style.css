@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+html,
+body {
+  scroll-behavior: smooth !important;
+}
 body {
   font-family: "Krona One", serif;
   background: #f3ece170;
 }
+
 .bg- {
   filter: brightness(50%);
 }
