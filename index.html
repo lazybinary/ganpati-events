@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event Balloon Decoration</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -12,8 +13,12 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./assests1/style/style1.css" />
-    <link rel="stylesheet" href="./assests1/style/style2.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests1/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assests1/style/style.css" />
   </head>
   <body>
     <!-- Swiper -->
@@ -37,7 +42,7 @@
                 </a>
               </div>
               <h2
-                class="text-[#2c2c2c] lg:text-[19px] sm:text-base text-sm font-medium text-center"
+                class="text-[#2c2c2c] lg:text-[19px] md:text-base sm:text-sm text-xs font-medium text-center"
               >
                 Buy Happy Holi Offer up to 25% off
               </h2>
@@ -53,108 +58,194 @@
         <!-- Sidebar -->
         <div
           id="sidebar"
-          class="fixed top-0 right-0 h-full w-[320px] sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[11] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
+          class="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[9999999] !bg-black border-l-[5px] border-l-[#f5a42f] overflow-y-auto"
         >
-          <div class="border-l-[#f5a42f] mx-4 border-l-[5px]">
-            <div class="flex justify-between items-center p-5">
-              <div class="max-w-[120px]">
-                <img width="100%" src="./assests1/img/logo.2.png" alt="" />
+          <div class="border-l-[#f5a42f] mx-4 border-l-[5px] h-full">
+            <div>
+              <div class="flex justify-between items-center p-5">
+                <div class="max-w-[120px]">
+                  <img width="100%" src="./assests1/img/logo.2.png" alt="" />
+                </div>
+                <button id="close-sidebar" class="text-white text-2xl">
+                  &times;
+                </button>
               </div>
-              <button id="close-sidebar" class="text-white text-2xl">
-                &times;
-              </button>
-            </div>
-            <div class="p-5">
-              <ul>
-                <li>
-                  <a href="#" class="block py-2 text-[#f5a42f] text-xl"
-                    >Ganpati Events Gurgoan</a
-                  >
-                </li>
-                <li>
+              <div class="p-5">
+                <ul>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#"
+                      class="block py-2 text-[#f5a42f] text-lg md:text-xl"
+                    >
+                      Events Balloon Decoration Gurgoan</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#cordecoration"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Corporate Decoration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#coupleroom"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Couple Decoration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#odecoration"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Occasion Decoration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="birthdayFun()"
+                      href="#paragraph2"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Birthday Decoration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#aboutus"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="#odecoration"
+                      class="block py-2 text-base md:text-xl hover:text-[#f5a42f] duration-300"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="tel:+91 9667261422"
+                      class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                      >+91 9667261422</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      onclick="closeSidebar()"
+                      href="mailto:info@ganpatievents.in"
+                      class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
+                      >info@ganpatievents.in</a
+                    >
+                  </li>
+                </ul>
+                <div class="flex sm:gap-4 gap-2 mt-3">
                   <a
+                    class="hover:scale-110 duration-300"
+                    onclick="closeSidebar()"
                     href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Home</a
-                  >
-                </li>
-                <li>
+                    ><svg
+                      class="group"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_4_4)">
+                        <path
+                          d="M6.44414 0.0768918C5.27356 0.131892 4.47422 0.318892 3.77664 0.592975C3.04305 0.870864 2.37869 1.30501 1.82964 1.86531C1.27166 2.41587 0.840028 3.08115 0.564641 3.81506C0.294225 4.51539 0.109975 5.31656 0.0586412 6.48623C0.00730785 7.65589 -0.00460881 8.03356 0.000891187 11.021C0.00639119 14.0084 0.0201412 14.3824 0.0769745 15.5557C0.132891 16.7263 0.318975 17.5256 0.593058 18.2241C0.875391 18.9474 1.25306 19.5597 1.86539 20.1702C2.41649 20.7284 3.08241 21.1601 3.81697 21.4352C4.51639 21.7056 5.31664 21.8899 6.48722 21.9412C7.65872 21.9926 8.03548 22.0045 11.022 21.999C14.0085 21.9935 14.3843 21.9797 15.5567 21.9238C16.7301 21.8688 17.5248 21.6809 18.2242 21.4077C18.9575 21.1297 19.6215 20.6956 20.1703 20.1354C20.7285 19.5843 21.1602 18.9184 21.4353 18.1838C21.7057 17.4844 21.89 16.6841 21.9404 15.5145C21.9917 14.3411 22.0046 13.9653 21.9981 10.9788C21.9926 7.99231 21.9798 7.61739 21.9239 6.44406C21.8689 5.27073 21.6819 4.47506 21.4069 3.77564C21.1292 3.04246 20.6953 2.37843 20.1355 1.82956C19.5846 1.27147 18.919 0.839828 18.1848 0.564558C17.4845 0.295058 16.6851 0.109892 15.5136 0.0603918C14.3431 0.00814176 13.9663 -0.00560824 10.9789 -0.000108238C7.99147 0.00539176 7.61747 0.0191418 6.44414 0.0768918ZM6.57247 19.9621C5.49997 19.9163 4.91789 19.7376 4.53014 19.5881C4.0516 19.4133 3.61861 19.1329 3.26331 18.7677C2.89696 18.414 2.61498 17.9822 2.43831 17.5046C2.28706 17.1168 2.10556 16.5347 2.05606 15.4622C2.00106 14.3036 1.99006 13.9552 1.98272 11.0182C1.97722 8.08123 1.98822 7.73381 2.03864 6.57423C2.08447 5.50264 2.26414 4.91964 2.41264 4.53189C2.61064 4.01764 2.84989 3.65189 3.23306 3.26506C3.5871 2.89859 4.01916 2.61661 4.49714 2.44006C4.88489 2.28881 5.46606 2.10914 6.53856 2.05781C7.69814 2.00281 8.04556 1.99181 10.9826 1.98448C13.9186 1.97898 14.267 1.98998 15.4284 2.04131C16.4991 2.08714 17.0821 2.26498 17.4698 2.41531C17.9831 2.61331 18.3498 2.85073 18.7366 3.23573C19.1235 3.62073 19.3609 3.98464 19.5616 4.49889C19.7129 4.88573 19.8935 5.46689 19.9439 6.54031C19.9989 7.69989 20.0117 8.04823 20.0172 10.9843C20.0218 13.9204 20.0117 14.2687 19.9613 15.4283C19.9146 16.5008 19.7367 17.0829 19.5873 17.4725C19.3893 17.9858 19.1501 18.3525 18.766 18.7375C18.4122 19.1038 17.9805 19.3858 17.5028 19.5625C17.116 19.7137 16.533 19.8943 15.4623 19.9456C14.3018 20.0006 13.9544 20.0116 11.0165 20.0181C8.07856 20.0245 7.73297 20.0116 6.57247 19.9621ZM15.5402 5.12039C15.5406 5.3815 15.6184 5.63664 15.7638 5.85353C15.9092 6.07042 16.1156 6.23932 16.357 6.33887C16.5984 6.43841 16.8639 6.46413 17.1199 6.41277C17.3759 6.3614 17.6109 6.23527 17.7952 6.05031C17.9795 5.86536 18.1049 5.6299 18.1553 5.37371C18.2058 5.11753 18.1792 4.85213 18.0788 4.61109C17.9784 4.37004 17.8088 4.16419 17.5914 4.01955C17.374 3.87492 17.1186 3.79801 16.8575 3.79856C16.5075 3.79929 16.1722 3.93893 15.9252 4.1868C15.6782 4.43466 15.5397 4.77046 15.5402 5.12039ZM5.35239 11.0109C5.35531 12.5088 5.95317 13.9443 7.01444 15.0014C8.07572 16.0586 9.51348 16.6509 11.0114 16.6479C12.5094 16.645 13.9448 16.0472 15.002 14.9859C16.0591 13.9246 16.6514 12.4868 16.6485 10.9889C16.6269 9.50329 16.0208 8.08602 14.9616 7.04412C13.9024 6.00223 12.4753 5.41962 10.9896 5.42251C9.50382 5.42541 8.07903 6.01357 7.02388 7.05958C5.96873 8.1056 5.3682 9.52522 5.35239 11.0109ZM7.33331 11.0072C7.33186 10.282 7.54549 9.57269 7.94718 8.96891C8.34887 8.36512 8.92059 7.89401 9.59003 7.61515C10.2595 7.33629 10.9966 7.26221 11.7081 7.40226C12.4197 7.54232 13.0737 7.89023 13.5875 8.40199C14.1013 8.91376 14.4518 9.5664 14.5947 10.2774C14.7376 10.9884 14.6665 11.7257 14.3903 12.3963C14.1141 13.0668 13.6453 13.6404 13.0432 14.0445C12.441 14.4486 11.7325 14.6651 11.0073 14.6666C10.5258 14.6675 10.0488 14.5736 9.60358 14.3903C9.15835 14.2069 8.7536 13.9376 8.41243 13.5978C8.07127 13.258 7.80038 12.8543 7.61522 12.4098C7.43006 11.9653 7.33427 11.4887 7.33331 11.0072Z"
+                          fill="white"
+                          class="group-hover:fill-[#f5a42f] duration-300"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4_4">
+                          <rect width="22" height="22" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
                   <a
+                    class="hover:scale-110 duration-300"
+                    onclick="closeSidebar()"
                     href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Corporate Decoration</a
-                  >
-                </li>
-                <li>
+                    ><svg
+                      class="group"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.1667 11C20.1667 5.93999 16.06 1.83333 11 1.83333C5.94001 1.83333 1.83334 5.93999 1.83334 11C1.83334 15.4367 4.98668 19.1308 9.16668 19.9833V13.75H7.33334V11H9.16668V8.70833C9.16668 6.93916 10.6058 5.49999 12.375 5.49999H14.6667V8.24999H12.8333C12.3292 8.24999 11.9167 8.66249 11.9167 9.16666V11H14.6667V13.75H11.9167V20.1208C16.5458 19.6625 20.1667 15.7575 20.1667 11Z"
+                        fill="white"
+                        class="group-hover:fill-[#f5a42f] duration-300"
+                      />
+                    </svg>
+                  </a>
                   <a
-                    href="#coupleroom"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Couple Decoration</a
-                  >
-                </li>
-                <li>
-                  <a
+                    class="hover:scale-110 duration-300"
+                    onclick="closeSidebar()"
                     href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Occasion Decoration</a
-                  >
-                </li>
-                <li>
+                    ><svg
+                      class="group"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.3619 5.18466C19.662 5.49401 18.9199 5.6973 18.1601 5.78783C18.9601 5.30822 19.5588 4.55447 19.8449 3.66666C19.0932 4.11399 18.2692 4.42749 17.4112 4.59708C16.8342 3.97977 16.0695 3.57038 15.2359 3.43253C14.4022 3.29468 13.5464 3.43611 12.8015 3.83483C12.0565 4.23354 11.4642 4.8672 11.1165 5.6373C10.7688 6.4074 10.6853 7.27079 10.879 8.09324C9.35447 8.0172 7.863 7.62124 6.50151 6.9311C5.14002 6.24095 3.93897 5.27207 2.97641 4.08741C2.63576 4.67269 2.45671 5.33796 2.45758 6.01516C2.45758 7.34433 3.13499 8.51858 4.16258 9.20608C3.55409 9.1858 2.95908 9.02149 2.42641 8.72666V8.77341C2.42638 9.65879 2.73261 10.5169 3.29315 11.2023C3.85369 11.8876 4.63403 12.358 5.50183 12.5336C4.93685 12.687 4.34433 12.7096 3.76933 12.5996C4.014 13.3617 4.49094 14.0282 5.13332 14.5057C5.77571 14.9832 6.55137 15.2478 7.35166 15.2625C6.55617 15.8869 5.64547 16.3485 4.67158 16.6209C3.69768 16.8933 2.67966 16.9712 1.67566 16.8502C3.42805 17.9771 5.468 18.5754 7.55149 18.5735C14.6043 18.5735 18.4598 12.7316 18.4598 7.66516C18.4598 7.49955 18.4562 7.33424 18.4488 7.16924C19.199 6.62686 19.8465 5.95514 20.361 5.18558"
+                        fill="white"
+                        class="group-hover:fill-[#f5a42f] duration-300"
+                      />
+                    </svg>
+                  </a>
                   <a
+                    class="hover:scale-110 duration-300"
+                    onclick="closeSidebar()"
                     href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Birthday Decoration</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Contact Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 text-xl hover:text-[#f5a42f] duration-300"
-                    >Gallery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="tel:+91 9667261422"
-                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
-                    >+91 9667261422</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="mailto:info@ganpatievents.in"
-                    class="block py-2 text-sm hover:text-[#f5a42f] duration-300"
-                    >info@ganpatievents.in</a
-                  >
-                </li>
-              </ul>
-              <div class="flex sm:gap-4 gap-2">
-                <a href="#"
-                  ><img src="./assests1/img/insta.svg" alt="social"
-                /></a>
-                <a href="#"
-                  ><img width="22px" src="./assests1/img/fb.svg" alt="social"
-                /></a>
-                <a href="#"
-                  ><img src="./assests1/img/ri_twitter-fill.svg" alt="social"
-                /></a>
-                <a href="#"
-                  ><img src="./assests1/img/mdi_youtube.svg" alt="social"
-                /></a>
+                    ><svg
+                      class="group"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.16668 13.75L13.9242 11L9.16668 8.24999V13.75ZM19.7633 6.5725C19.8825 7.00333 19.965 7.58083 20.02 8.31416C20.0842 9.04749 20.1117 9.67999 20.1117 10.23L20.1667 11C20.1667 13.0075 20.02 14.4833 19.7633 15.4275C19.5342 16.2525 19.0025 16.7842 18.1775 17.0133C17.7467 17.1325 16.9583 17.215 15.7483 17.27C14.5567 17.3342 13.4658 17.3617 12.4575 17.3617L11 17.4167C7.15918 17.4167 4.76668 17.27 3.82251 17.0133C2.99751 16.7842 2.46584 16.2525 2.23668 15.4275C2.11751 14.9967 2.03501 14.4192 1.98001 13.6858C1.91584 12.9525 1.88834 12.32 1.88834 11.77L1.83334 11C1.83334 8.99249 1.98001 7.51666 2.23668 6.5725C2.46584 5.7475 2.99751 5.21583 3.82251 4.98666C4.25334 4.86749 5.04168 4.78499 6.25168 4.72999C7.44334 4.66583 8.53418 4.63833 9.54251 4.63833L11 4.58333C14.8408 4.58333 17.2333 4.72999 18.1775 4.98666C19.0025 5.21583 19.5342 5.7475 19.7633 6.5725Z"
+                        fill="white"
+                        class="group-hover:fill-[#f5a42f] duration-300"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -259,6 +350,7 @@
       </div>
       <section>
         <div
+          id="aboutus"
           class="max-w-[1440px] px-2.5 2xl:px-10 mx-auto rounded-[22px] bg-white"
         >
           <span class="block max-w-[86px] mx-auto mt-16"
@@ -297,6 +389,7 @@
             ><img width="100%" src="./assests1/img/ballon.webp" alt="balloon"
           /></span>
           <h1
+            id="cordecoration"
             class="text-[20px] leading-[130%] text-center max-w-[800px] mx-auto"
           >
             Best Balloon Decoration in Gurgaon Packages
@@ -305,7 +398,7 @@
             class="flex flex-wrap mt-10 justify-center md:justify-start gap-5 gap-y-5 w-full"
           >
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] w-[70%] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -313,9 +406,7 @@
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
                       src="./assests1/img/card-6.jpg"
-                      alt="Bride to Be Decoration
-
-"
+                      alt="Bride to Be Decoration"
                     />
                   </div>
                   <div class="flex justify-between m-2.5">
@@ -355,7 +446,7 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -403,7 +494,7 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -451,7 +542,7 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -502,14 +593,14 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
                   <div class="">
                     <img
                       class="w-full rounded-[12px] object-cover max-h-[282px]"
-                      src="./assests1/img/anniversary-1.webp"
+                      src="./assests1/img/anniversary-14.webp"
                       alt="anniversary-decoration-img"
                     />
                   </div>
@@ -551,7 +642,7 @@
             </div>
             <div
               id="coupleroom"
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -599,7 +690,7 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -647,7 +738,7 @@
               </div>
             </div>
             <div
-              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] md:w-[48%] xl:w-[32%]"
+              class="p-3 rounded-[12px] box-shadow-main border-[2px] border-[solid] border-[#8338817] max-[450px]:w-[100%] min-[450px]:w-[70%] md:w-[48%] xl:w-[32%]"
             >
               <div class="justify-between flex flex-col h-full">
                 <div>
@@ -774,7 +865,7 @@
       </div>
     </section>
     <!-- decorations image  -->
-    <div class="max-w-[1520px] px-2 xl:px-10 mx-auto">
+    <div id="odecoration" class="max-w-[1520px] px-2 xl:px-10 mx-auto">
       <div class="py-[10px] flex flex-col gap-5">
         <div class="flex flex-col justify-center">
           <div class="max-w-[86px] mx-auto">
@@ -846,7 +937,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-welcome-baby.webp"
+                src="./assests1/img/balloon-dec-1.webp"
                 alt=""
             /></a>
             <a
@@ -854,7 +945,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-5.webp"
+                src="./assests1/img/balloon-dec-2.webp"
                 alt=""
             /></a>
             <a
@@ -862,7 +953,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-9.webp"
+                src="./assests1/img/balloon-dec-3.webp"
                 alt=""
             /></a>
             <a
@@ -870,7 +961,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-12.webp"
+                src="./assests1/img/balloon-dec-4.webp"
                 alt=""
             /></a>
             <a
@@ -878,7 +969,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-20.webp"
+                src="./assests1/img/balloon-dec-5.webp"
                 alt=""
             /></a>
             <a
@@ -886,13 +977,13 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-24.webp"
+                src="./assests1/img/balloon-dec-6.webp"
                 alt=""
             /></a>
             <a class="max-w-[347.5px] lg:max-w-[500px] xl:w-full" href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-happy-birthday.webp"
+                src="./assests1/img/balloon-dec-7.webp"
                 alt=""
             /></a>
             <a
@@ -900,7 +991,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-6.webp"
+                src="./assests1/img/balloon-dec-8.webp"
                 alt=""
             /></a>
             <a
@@ -908,7 +999,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-10.webp"
+                src="./assests1/img/balloon-dec-9.webp"
                 alt=""
             /></a>
             <a
@@ -916,7 +1007,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-13.webp"
+                src="./assests1/img/balloon-dec-10.webp"
                 alt=""
             /></a>
             <a
@@ -924,7 +1015,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-15.webp"
+                src="./assests1/img/balloon-dec-11.webp"
                 alt=""
             /></a>
             <a
@@ -932,7 +1023,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-21.webp"
+                src="./assests1/img/balloon-dec-12.webp"
                 alt=""
             /></a>
             <a
@@ -940,7 +1031,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-3.webp"
+                src="./assests1/img/balloon-dec-13.webp"
                 alt=""
             /></a>
             <a
@@ -948,7 +1039,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-7.webp"
+                src="./assests1/img/balloon-dec-14.webp"
                 alt=""
             /></a>
             <a
@@ -956,7 +1047,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-11.webp"
+                src="./assests1/img/balloon-dec-15.webp"
                 alt=""
             /></a>
             <a
@@ -964,7 +1055,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-10.webp"
+                src="./assests1/img/balloon-dec-16.webp"
                 alt=""
             /></a>
             <a
@@ -972,7 +1063,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-11.webp"
+                src="./assests1/img/balloon-dec-17.webp"
                 alt=""
             /></a>
             <a
@@ -980,7 +1071,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-22.webp"
+                src="./assests1/img/balloon-dec-18.webp"
                 alt=""
             /></a>
             <a
@@ -988,7 +1079,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-25.webp"
+                src="./assests1/img/balloon-dec-19.webp"
                 alt=""
             /></a>
             <a
@@ -996,55 +1087,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-4.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-8.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-12.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-15.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-9.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-23.webp"
-                alt=""
-            /></a>
-            <a
-              class="max-w-[347.5px] lg:max-w-[500px] xl:w-full max-h-[350px] md:max-h-[420px] lg:max-h-[500px]"
-              href="#"
-              ><img
-                class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-26.webp"
+                src="./assests1/img/balloon-dec-20.webp"
                 alt=""
             /></a>
           </div>
@@ -1241,7 +1284,7 @@
               href="#"
               ><img
                 class="w-full rounded-2xl h-[100%] object-cover"
-                src="./assests1/img/ganpati-event-24.webp"
+                src="./assests1/img/birthday-dec-24.webp"
                 alt=""
             /></a>
           </div>
@@ -3219,7 +3262,7 @@
                 <p class="text-xl text-[#1e293b] mb-5">Search On Google</p>
                 <p class="text-[12px] text-[#334155] mb-5">
                   best balloon decoration in gurgaon and select
-                  www.ganpatievent.in
+                  www.eventballoondecoration.in
                 </p>
               </div>
             </div>
@@ -3807,9 +3850,7 @@
     </section>
     <!-- footer -->
     <footer>
-      <div
-        class="max-w-[1520px] px-2 xl:px-10 mx-auto pb-8 max-[640px]:mb-[65px]"
-      >
+      <div class="max-w-[1520px] px-2 xl:px-10 mx-auto pb-8 max-sm:pb-[95px]">
         <div class="p-2.5 bg-white rounded-xl border-solid border-[2px]">
           <div
             class="flex p-2.5 flex-wrap lg:flex-nowrap min-[556px]:justify-around lg:justify-between gap-y-8 gap-5"
@@ -3817,7 +3858,7 @@
             <div
               class="flex flex-col w-[100%] min-[556px]:w-[48%] sm:w-[45%] md:w-[40%] lg:w-[26.45%] sm:p-2.5 gap-3 md:gap-5"
             >
-              <a class="max-w-[145px]" href="#"
+              <a class="max-w-[145px]" href="/"
                 ><img class="w-full" src="./assests1/img/logo.2.png" alt=""
               /></a>
               <p class="text-xl text-[#363636]">
@@ -3857,7 +3898,7 @@
                 <li
                   class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <a href="">Corporate decoration </a>
+                  <a href="/">Corporate decoration </a>
                 </li>
                 <li
                   class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
@@ -3867,12 +3908,12 @@
                 <li
                   class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <a href="">Haldhi Mehandi decoration </a>
+                  <a href="/">Haldhi Mehandi decoration </a>
                 </li>
                 <li
                   class="pb-[6.5px] mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
                 >
-                  <a href="babywelcome">Baby Welcome decoration </a>
+                  <a href="#babywelcome">Baby Welcome decoration </a>
                 </li>
                 <li
                   class="mt-[6.5px] text-[13px] sm:text-sm text-[#2b2b2b] hover:text-[#F5A42F] duration-300"
@@ -3906,7 +3947,7 @@
               <div>
                 <div class="mapouter relative text-right w-full h-[185px]">
                   <div
-                    class="gmap_canvas overflow-hidden bg-none w-full h-[185px] rounded-2xl"
+                    class="gmap_canvas overflow-hidden bg-none w-full h-[185px]"
                   >
                     <iframe
                       class="gmap_iframe h-[185px]"
@@ -3915,7 +3956,7 @@
                       scrolling="no"
                       marginheight="0"
                       marginwidth="0"
-                      src="https://maps.google.com/maps?width=659&amp;height=185&amp;hl=en&amp;q=lazy binary&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                      src="https://maps.google.com/maps?width=663&amp;height=185&amp;hl=en&amp;q=gurugram&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                     ></iframe
                     ><a href="https://sprunkiplay.com/">Sprunki Game</a>
                   </div>
@@ -3929,7 +3970,7 @@
                 >
                   <a
                     class="text-[#2b2b2b] text-[13px] sm:text-sm hover:text-[#F5A42F] duration-300"
-                    href="#"
+                    href="/"
                     >Privacy policy
                   </a>
                 </li>
@@ -3938,7 +3979,7 @@
                 >
                   <a
                     class="text-[#2b2b2b] text-[13px] sm:text-sm hover:text-[#F5A42F] duration-300"
-                    href="#"
+                    href="/"
                     >Contact us
                   </a>
                 </li>
@@ -3947,7 +3988,7 @@
                 >
                   <a
                     class="text-[#2b2b2b] text-[13px] sm:text-sm hover:text-[#F5A42F] duration-300"
-                    href="#"
+                    href="#aboutus"
                     >About Us
                   </a>
                 </li>
@@ -3974,9 +4015,7 @@
       </div>
     </footer>
     <!-- bottom section -->
-    <div
-      class="sm:hidden fixed bottom-2 left-0 right-0 mx-auto w-[80%] z-[999]"
-    >
+    <div class="sm:hidden fixed bottom-2 left-0 right-0 mx-auto w-[95%] z-[2]">
       <div
         class="bg-[#F5A42F] p-3 rounded-[22px] flex justify-around gap-8 items-center"
       >
@@ -4039,14 +4078,24 @@
           </svg>
           <span class="text-[12px]">Chat</span>
         </a>
+        <div
+          class="scroll-icon block sm:hidden h-[65px] w-[60px] bg-[#F5A42F] rounded-l-[50px] flex items-center z-[9999]"
+        >
+          <div
+            class="w-[50px] h-[50px] rounded-[50%] bg-[#F5A42F] border-[2px] border-solid border-[#fff] flex items-center justify-center text-white text-xs duration-300 circle"
+            id="scrollPercentage"
+          >
+            0%
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="scroll-icon hidden sm:block fixed bottom-2.5 right-0 h-[65px] w-[80px] bg-[#F5A42F] rounded-l-[50px] flex items-center pl-2.5 z-[99999999999]"
+      class="scroll-icon hidden sm:block fixed bottom-2.5 right-0 h-[65px] w-[80px] bg-[#F5A42F] rounded-l-[50px] flex items-center pl-2.5 z-[9999]"
     >
       <div
         class="w-[50px] h-[50px] rounded-[50%] bg-[#F5A42F] border-[2px] border-solid border-[#fff] flex items-center justify-center text-white text-xs duration-300 mt-[8px] circle"
-        id="scrollPercentage"
+        id="scrollPercentage2"
       >
         0%
       </div>
@@ -4077,6 +4126,7 @@
       const overlay = document.getElementById("overlay");
       const navbar = document.getElementById("navbar");
       const body = document.getElementsByTagName("body")[0];
+      const sidebarLinks = document.querySelectorAll("#sidebar-links a");
       // const body = document.getElementById("opacity-40");
 
       // Toggle sidebar visibility
@@ -4086,7 +4136,6 @@
         navbar.classList.add("hidden");
         body.classList.add("overflow-hidden");
       });
-
       // Close sidebar
       closeSidebarBtn.addEventListener("click", () => {
         sidebar.classList.add("translate-x-full");
@@ -4094,7 +4143,6 @@
         navbar.classList.remove("hidden");
         body.classList.remove("overflow-hidden");
       });
-
       // Close sidebar if overlay is clicked
       overlay.addEventListener("click", () => {
         sidebar.classList.add("translate-x-full");
@@ -4102,6 +4150,16 @@
         navbar.classList.remove("hidden");
         body.classList.remove("overflow-hidden");
       });
+      function closeSidebar() {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+        navbar.classList.remove("hidden");
+        body.classList.remove("overflow-hidden");
+      }
+      function birthdayFun() {
+        closeSidebar();
+        showParagraph(2);
+      }
     </script>
     <script>
       const buttons = document.querySelectorAll(".toggle-button");
@@ -4110,7 +4168,6 @@
           const firstImg = button.querySelector(".first-img");
           const secondImg = button.querySelector(".second-img");
           const description = button.querySelector(".description");
-
           // Close all other sections first
           buttons.forEach((otherButton) => {
             if (otherButton !== button) {
@@ -4125,12 +4182,10 @@
               otherButton.style.backgroundColor = "#f3f3f3"; // Reset background color
             }
           });
-
           // Toggle the clicked section
           firstImg.classList.toggle("hidden");
           secondImg.classList.toggle("hidden");
           description.classList.toggle("hidden");
-
           // Change background color when clicked
           if (description.classList.contains("hidden")) {
             button.style.backgroundColor = "#f3f3f3"; // Reset to initial color if not active
@@ -4220,6 +4275,27 @@
         // Update scroll percentage text
         document.getElementById(
           "scrollPercentage"
+        ).innerText = `${scrollPercent}%`;
+
+        // Calculate border color from scroll percentage (white to black)
+        const borderColor = `rgb(${255 - scrollPercent}, ${scrollPercent}, 0)`;
+
+        // Apply the border color
+        document.querySelector(".circle").style.borderColor = borderColor;
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        const docHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+        // Update scroll percentage text
+        document.getElementById(
+          "scrollPercentage2"
         ).innerText = `${scrollPercent}%`;
 
         // Calculate border color from scroll percentage (white to black)

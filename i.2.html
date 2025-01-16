@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image Modal with Navigation</title>
+
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Optional: Smooth transition for opening and closing modal */
+      .modal-content {
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Image Gallery (10 Images) -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <!-- Repeat this block for each of your 10 images -->
+      <a href="#" onclick="openModal(event, 0)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-1.webp"
+          alt="Image 1"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 1)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-2.webp"
+          alt="Image 2"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 2)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-3.webp"
+          alt="Image 3"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 3)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-4.webp"
+          alt="Image 4"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 4)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-5.webp"
+          alt="Image 5"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 5)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-6.webp"
+          alt="Image 6"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 6)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-7.webp"
+          alt="Image 7"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 7)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-8.webp"
+          alt="Image 8"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 8)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-9.webp"
+          alt="Image 9"
+        />
+      </a>
+      <a href="#" onclick="openModal(event, 9)">
+        <img
+          class="w-full h-[200px] object-cover rounded-2xl"
+          src="./assests1/img/balloon-dec-10.webp"
+          alt="Image 10"
+        />
+      </a>
+    </div>
+
+    <!-- Modal Structure with Black Background Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden"></div>
+    <!-- Background Overlay -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 flex items-center justify-center hidden"
+    >
+      <div
+        class="relative max-w-[450px] max-h-[450px] bg-transparent rounded-lg"
+      >
+        <!-- Close Button -->
+        <span
+          class="absolute top-2 right-2 text-white text-3xl cursor-pointer"
+          onclick="closeModal()"
+          >&times;</span
+        >
+
+        <!-- Modal Image with Padding for Small Screens -->
+        <img
+          id="modalImage"
+          class="w-full h-full object-contain rounded-lg px-2 sm:px-0"
+          src=""
+          alt="Zoomed Image"
+        />
+
+        <!-- Navigation Buttons Outside the Image (No Background) -->
+        <button
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white font-extrabold text-xl w-[40px] h-[80px] rounded-lg"
+          onclick="changeImage('prev')"
+        >
+          &lt;
+        </button>
+        <button
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white font-extrabold text-xl w-[40px] h-[80px] rounded-lg"
+          onclick="changeImage('next')"
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+      let currentIndex = null;
+      const images = [
+        "./assests1/img/balloon-dec-1.webp",
+        "./assests1/img/balloon-dec-2.webp",
+        "./assests1/img/balloon-dec-3.webp",
+        "./assests1/img/balloon-dec-4.webp",
+        "./assests1/img/balloon-dec-5.webp",
+        "./assests1/img/balloon-dec-6.webp",
+        "./assests1/img/balloon-dec-7.webp",
+        "./assests1/img/balloon-dec-8.webp",
+        "./assests1/img/balloon-dec-9.webp",
+        "./assests1/img/balloon-dec-10.webp",
+      ];
+
+      // Function to open the modal and display the clicked image
+      function openModal(event, index) {
+        event.preventDefault();
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+        const modalImage = document.getElementById("modalImage");
+
+        // Set current index
+        currentIndex = index;
+
+        // Set the image in modal
+        modalImage.src = images[currentIndex];
+
+        // Show the modal and overlay
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+
+        // Hide the modal and overlay
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+      }
+
+      // Function to change image (next/prev)
+      function changeImage(direction) {
+        if (direction === "next") {
+          currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+        } else if (direction === "prev") {
+          currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop to the last image
+        }
+        document.getElementById("modalImage").src = images[currentIndex];
+      }
+    </script>
+  </body>
+</html>
