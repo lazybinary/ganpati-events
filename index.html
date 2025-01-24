@@ -25,7 +25,7 @@
       <div class="relative bg-white">
         <!-- Navbar -->
         <nav id="navbar" class="transition-all ease-in-out duration-300">
-          <div class="z-[3] fixed bg-white top-0 left-0 right-0">
+          <div class="z-[4] fixed bg-white top-0 left-0 right-0">
             <div class="max-w-[1240px] lg:px-[50px] sm:px-6 px-4 mx-auto">
               <div class="flex justify-between items-center p-[6.5px] gap-3">
                 <div class="max-w-[138px]">
@@ -43,10 +43,14 @@
                     class="text-base font-semibold border-b-[#000000] leading-[125%] border-b-[2px]"
                     >Home</a
                   >
-                  <a href="#" class="text-base leading-[125%]">About Us</a>
-                  <a href="#" class="text-base leading-[125%]">Services</a>
-                  <a href="#" class="text-base leading-[125%]">Blog</a>
-                  <a href="#" class="text-base leading-[125%]">Occasion</a>
+                  <a href="#about" class="text-base leading-[125%]">About Us</a>
+                  <a href="#services" class="text-base leading-[125%]"
+                    >Services</a
+                  >
+                  <a href="#blog" class="text-base leading-[125%]">Blog</a>
+                  <a href="#services" class="text-base leading-[125%]"
+                    >Occasion</a
+                  >
                 </div>
                 <div class="hidden md:block">
                   <a
@@ -110,7 +114,7 @@
                   <li>
                     <a
                       onclick="closeSidebar()"
-                      href="#coupleroom"
+                      href="#services"
                       class="block py-2 text-base font-semibold md:text-xl hover:text-[#F7C810] duration-300"
                     >
                       Services
@@ -347,7 +351,7 @@
                 24/7 Support
               </p>
             </div>
-            <div class="text-center">
+            <div class="text-center" id="about">
               <div class="flex justify-center w-[41px] mx-auto md:w-[54.87]">
                 <img
                   width="100%"
@@ -422,6 +426,7 @@
             </p>
             <a
               href="#"
+              id="services"
               class="bg-[#F7C810] text-black mt-6 sm:mt-8 lg:mt-10 block max-w-fit text-xs px-3 py-2.5 sm:py-3 rounded-[5px] rounded-[5px] font-semibold hover:text-[#F7C810] border-[#F7C810] border duration-300 hover:bg-transparent text-sm sm:text-base"
               >Get In Touch</a
             >
@@ -680,6 +685,7 @@
             </ul>
             <a
               href="#"
+              id="blog"
               class="bg-[#F7C810] text-black mt-6 sm:mt-8 lg:mt-11 block max-w-fit text-xs px-3 py-2.5 sm:py-3 rounded-[5px] rounded-[5px] font-semibold hover:text-[#F7C810] border-[#F7C810] border duration-300 text-sm sm:text-base hover:bg-transparent"
               >Learn More</a
             >
@@ -2210,12 +2216,12 @@
           <!-- Modal for images -->
           <div
             id="overlay"
-            class="fixed inset-0 bg-black opacity-70 hidden z-[999999]"
+            class="fixed inset-0 hidden z-[999999]"
             onclick="closeModal()"
           ></div>
           <div
             id="imageModal"
-            class="fixed inset-0 flex items-center justify-center hidden z-[10]"
+            class="fixed inset-0 flex items-center justify-center hidden z-[10] bg-black bg-opacity-70"
           >
             <div
               class="relative max-w-[600px] max-h-[600px] bg-transparent rounded-lg mx-auto my-[auto] z-[999]"
