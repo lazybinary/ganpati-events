@@ -18,7 +18,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assests1/style/style.css" />
-    <title>Document</title>
+    <title>Event Balloon Decoration</title>
   </head>
   <body id="body">
     <div class="bg-white">
@@ -3309,6 +3309,21 @@
           button.querySelector("svg").setAttribute("stroke", "white"); // Change back to white when unliked
         }
       }
+    </script>
+    <!-- title change -->
+    <script>
+      function changeTabTitle() {
+        const originalTitle = document.title;
+
+        document.addEventListener("visibilitychange", function () {
+          if (document.hidden) {
+            document.title = "Please come back :-(";
+          } else {
+            document.title = originalTitle;
+          }
+        });
+      }
+      changeTabTitle();
     </script>
   </body>
 </html>
