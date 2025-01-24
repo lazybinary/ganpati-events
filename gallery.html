@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event Balloon Decoration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assests1/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assests1/style/style.css" />
+  </head>
+  <body id="body">
+    <div
+      id="odecoration"
+      class="max-w-[1240px] px-4 sm:px-6 lg:px-[50px] py-[75px] mx-auto"
+    >
+      <div>
+        <div class="flex flex-col justify-center">
+          <div class="text-center mb-[56px]">
+            <p
+              class="text-sm sm:text-base leading-[155%] font-semibold tracking-[4.96px] mb-[15px]"
+            >
+              Gallery
+            </p>
+            <p
+              class="[32px] sm:text-4xl md:text-[42px] lg:text-5xl font-semibold !leading-[125%]"
+            >
+              Our Balloon Creations
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <div class="flex justify-between items-center gap-[30px] mb-[60px]">
+              <p
+                class="text-xl sm:text-[22px] md:text-2xl font-semibold !leading-[155%] tracking-[0.48px]"
+              >
+                Decorations
+              </p>
+              <div class="flex gap-[40px] items-center tabs overflow-x-auto">
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(0)"
+                >
+                  Balloons
+                </button>
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(1)"
+                >
+                  Birthday
+                </button>
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(2)"
+                >
+                  Baby Shower
+                </button>
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(3)"
+                >
+                  Aniversary
+                </button>
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(4)"
+                >
+                  Car Boot
+                </button>
+                <button
+                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  onclick="openTab(5)"
+                >
+                  Couple Room
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-1"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] rounded-[12px]"
+                src="./assests1/img/balloon-dec-1.webp"
+                alt="Image 1" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-2.webp"
+                alt="Image 2" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-3.webp"
+                alt="Image 3" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-4.webp"
+                alt="Image 4" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-5.webp"
+                alt="Image 5" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-6.webp"
+                alt="Image 6" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-7.webp"
+                alt="Image 7" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-8.webp"
+                alt="Image 8" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-2"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-1.webp"
+                alt="Image 9" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-2.webp"
+                alt="Image 10" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-3.webp"
+                alt="Image 11" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-4.webp"
+                alt="Image 12" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-5.webp"
+                alt="Image 13" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-6.webp"
+                alt="Image 14" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-7.webp"
+                alt="Image 15" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/birthday-dec-8.webp"
+                alt="Image 16" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-3"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-1.webp"
+                alt="Image 17" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-2.webp"
+                alt="Image 18" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-3.webp"
+                alt="Image 19" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-4.webp"
+                alt="Image 20" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-5.webp"
+                alt="Image 21" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-6.webp"
+                alt="Image 22" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-7.webp"
+                alt="Image 23" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/baby-shower-8.webp"
+                alt="Image 24" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-4"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-1.webp"
+                alt="Image 25" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-2.webp"
+                alt="Image 26" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-3.webp"
+                alt="Image 27" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-4.webp"
+                alt="Image 28" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-5.webp"
+                alt="Image 29" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-6.webp"
+                alt="Image 30" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-7.webp"
+                alt="Image 31" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/anniversary-8.webp"
+                alt="Image 32" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-5"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-1.jpg"
+                alt="Image 33" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-2.jpg"
+                alt="Image 34" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-3.jpg"
+                alt="Image 35" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-4.jpg"
+                alt="Image 36" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-5.jpg"
+                alt="Image 36" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/car-boot-6.jpg"
+                alt="Image 36" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-6.webp"
+                alt="Image 36" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/balloon-dec-5.webp"
+                alt="Image 36" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <div
+            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
+            id="gallery-tab-6"
+          >
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 0)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-1.jpg"
+                alt="Image 37" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 1)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-2.jpg"
+                alt="Image 38" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 2)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-3.jpg"
+                alt="Image 39" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 3)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-4.jpg"
+                alt="Image 40" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 4)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-5.jpg"
+                alt="Image 41" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 5)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-6.jpg"
+                alt="Image 42" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 6)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-7.jpg"
+                alt="Image 43" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+            <a
+              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
+              href="#"
+              onclick="openModal(event, 7)"
+              ><img
+                class="w-full h-[100%] object-cover rounded-[12px]"
+                src="./assests1/img/couple-room-8.jpg"
+                alt="Image 44" />
+              <button
+                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
+                onclick="toggleLike(event)"
+              >
+                <svg
+                  id="heart-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
+                  fill="none"
+                  stroke="white"
+                >
+                  <path
+                    id="heart-path"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <!-- Modal for images -->
+          <div
+            id="overlay"
+            class="fixed inset-0 bg-black opacity-70 hidden z-[999999999999999999999]"
+            onclick="closeModal()"
+          ></div>
+          <div
+            id="imageModal"
+            class="fixed inset-0 flex items-center justify-center hidden z-[999999999999999999999]"
+          >
+            <div
+              class="relative max-w-[600px] max-h-[600px] bg-transparent rounded-lg mx-auto my-[auto]"
+            >
+              <span
+                class="absolute flex justify-center items-center w-[40px] h-[auto] top-2 right-2 text-[#F7C810] text-3xl cursor-pointer bg-black bg-opacity-50 rounded-md hover:bg-opacity-70"
+                onclick="closeModal()"
+                >×</span
+              >
+              <img
+                id="modalImage"
+                class="w-[600px] h-[600px] object-cover rounded-lg"
+                src=""
+                alt="Zoomed Image"
+              />
+              <button
+                class="absolute left-2 top-1/2 transform -translate-y-1/2 text-[#F7C810] text-3xl w-10 h-10 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-lg"
+                onclick="changeImage(-1)"
+              >
+                &#10094;
+              </button>
+              <button
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-[#F7C810] text-3xl w-10 h-10 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-lg"
+                onclick="changeImage(1)"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let currentIndex = null;
+      let currentTabIndex = 0; // Track the current tab index
+
+      const images = [
+        [
+          "./assests1/img/balloon-dec-1.webp",
+          "./assests1/img/balloon-dec-2.webp",
+          "./assests1/img/balloon-dec-3.webp",
+          "./assests1/img/balloon-dec-4.webp",
+          "./assests1/img/balloon-dec-5.webp",
+          "./assests1/img/balloon-dec-6.webp",
+          "./assests1/img/balloon-dec-7.webp",
+          "./assests1/img/balloon-dec-8.webp",
+        ],
+        [
+          "./assests1/img/birthday-dec-1.webp",
+          "./assests1/img/birthday-dec-2.webp",
+          "./assests1/img/birthday-dec-3.webp",
+          "./assests1/img/birthday-dec-4.webp",
+          "./assests1/img/birthday-dec-5.webp",
+          "./assests1/img/birthday-dec-6.webp",
+          "./assests1/img/birthday-dec-7.webp",
+          "./assests1/img/birthday-dec-8.webp",
+        ],
+        [
+          "./assests1/img/baby-shower-1.webp",
+          "./assests1/img/baby-shower-2.webp",
+          "./assests1/img/baby-shower-3.webp",
+          "./assests1/img/baby-shower-4.webp",
+          "./assests1/img/baby-shower-5.webp",
+          "./assests1/img/baby-shower-6.webp",
+          "./assests1/img/baby-shower-7.webp",
+          "./assests1/img/baby-shower-8.webp",
+        ],
+        [
+          "./assests1/img/anniversary-1.webp",
+          "./assests1/img/anniversary-2.webp",
+          "./assests1/img/anniversary-3.webp",
+          "./assests1/img/anniversary-4.webp",
+          "./assests1/img/anniversary-5.webp",
+          "./assests1/img/anniversary-6.webp",
+          "./assests1/img/anniversary-7.webp",
+          "./assests1/img/anniversary-8.webp",
+        ],
+        [
+          "./assests1/img/car-boot-1.jpg",
+          "./assests1/img/car-boot-2.jpg",
+          "./assests1/img/car-boot-3.jpg",
+          "./assests1/img/car-boot-4.jpg",
+          "./assests1/img/car-boot-5.jpg",
+          "./assests1/img/car-boot-6.jpg",
+          "./assests1/img/birthday-dec-6.webp",
+          "./assests1/img/birthday-dec-5.webp",
+        ],
+        [
+          "./assests1/img/couple-room-1.jpg",
+          "./assests1/img/couple-room-2.jpg",
+          "./assests1/img/couple-room-3.jpg",
+          "./assests1/img/couple-room-4.jpg",
+          "./assests1/img/couple-room-5.jpg",
+          "./assests1/img/couple-room-6.jpg",
+          "./assests1/img/couple-room-7.jpg",
+          "./assests1/img/couple-room-8.jpg",
+        ],
+      ];
+
+      function openModal(event, index) {
+        event.preventDefault();
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+        const modalImage = document.getElementById("modalImage");
+
+        currentTabIndex = Array.from(
+          document.querySelectorAll(".tab-content")
+        ).findIndex((tab) => !tab.classList.contains("hidden"));
+        currentIndex = index;
+
+        modalImage.src = images[currentTabIndex][currentIndex];
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        const overlay = document.getElementById("overlay");
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+      }
+
+      function changeImage(direction) {
+        const totalImages = images[currentTabIndex].length;
+        currentIndex = (currentIndex + direction + totalImages) % totalImages; // Wrap around
+        const modalImage = document.getElementById("modalImage");
+        modalImage.src = images[currentTabIndex][currentIndex];
+      }
+
+      function openTab(tabIndex) {
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        tabButtons.forEach((button, index) => {
+          button.classList.toggle("bg-[#F7C810]", index === tabIndex);
+          button.classList.toggle("text-black", index === tabIndex);
+          button.classList.toggle("text-[#000]", index !== tabIndex);
+        });
+
+        const tabContents = document.querySelectorAll(".tab-content");
+        tabContents.forEach((content, index) => {
+          content.classList.toggle("hidden", index !== tabIndex);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        openTab(0); // Open the first tab by default
+      });
+
+      function toggleLike(event) {
+        event.stopPropagation(); // Prevent the click from bubbling up to the image link
+        const button = event.currentTarget;
+        button.classList.toggle("liked"); // Toggle the 'liked' class
+
+        // Change the button's color based on the 'liked' class
+        if (button.classList.contains("liked")) {
+          button.querySelector("svg").setAttribute("fill", "#ff073a"); // Change to red when liked
+          button.querySelector("svg").setAttribute("stroke", "none"); // Change to red when liked
+        } else {
+          button.querySelector("svg").setAttribute("fill", "none"); // Change back to white when unliked
+          button.querySelector("svg").setAttribute("stroke", "white"); // Change back to white when unliked
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -40,3 +40,7 @@ body {
   box-shadow: 0px 0px 4px 0px
     rgba(102.83230895996093, 102.83230895996093, 102.83230895996093, 0.5) inset;
 }
+.blurs {
+  backdrop-filter: blur(1px);
+  /* -webkit-filter: blur(8px); */
+}
