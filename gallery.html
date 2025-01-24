@@ -30,7 +30,7 @@
               Gallery
             </p>
             <p
-              class="[32px] sm:text-4xl md:text-[42px] lg:text-5xl font-semibold !leading-[125%]"
+              class="text-[32px] sm:text-4xl md:text-[42px] lg:text-5xl font-semibold !leading-[125%]"
             >
               Our Balloon Creations
             </p>
@@ -44,39 +44,41 @@
               >
                 Decorations
               </p>
-              <div class="flex gap-[40px] items-center tabs overflow-x-auto">
+              <div
+                class="flex gap-[40px] items-center tabs overflow-x-auto scroll-hide"
+              >
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(0)"
                 >
                   Balloons
                 </button>
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(1)"
                 >
                   Birthday
                 </button>
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(2)"
                 >
                   Baby Shower
                 </button>
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(3)"
                 >
                   Aniversary
                 </button>
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(4)"
                 >
                   Car Boot
                 </button>
                 <button
-                  class="bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
+                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(5)"
                 >
                   Couple Room
@@ -1628,6 +1630,7 @@
         modalImage.src = images[currentTabIndex][currentIndex];
         modal.classList.remove("hidden");
         overlay.classList.remove("hidden");
+        document.getElementById("body").classList.add("overflow-hidden");
       }
 
       function closeModal() {
@@ -1635,6 +1638,7 @@
         const overlay = document.getElementById("overlay");
         modal.classList.add("hidden");
         overlay.classList.add("hidden");
+        document.getElementById("body").classList.remove("overflow-hidden");
       }
 
       function changeImage(direction) {
