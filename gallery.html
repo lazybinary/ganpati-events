@@ -49,12 +49,6 @@
               >
                 <button
                   class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
-                  onclick="openTab(0)"
-                >
-                  Balloons
-                </button>
-                <button
-                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(1)"
                 >
                   Birthday
@@ -71,12 +65,7 @@
                 >
                   Aniversary
                 </button>
-                <button
-                  class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
-                  onclick="openTab(4)"
-                >
-                  Car Boot
-                </button>
+
                 <button
                   class="mb-2 bg-[#d9d9d9] text-sm sm:text-base font-semibold !leading-[125%] whitespace-nowrap py-[13px] px-[14px] rounded-[4px] text-black tab-btn"
                   onclick="openTab(5)"
@@ -86,243 +75,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
-            id="gallery-tab-1"
-          >
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 0)"
-              ><img
-                class="w-full h-[100%] rounded-[12px]"
-                src="./assests1/img/balloon-dec-1.webp"
-                alt="Image 1" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 1)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-2.webp"
-                alt="Image 2" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 2)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-3.webp"
-                alt="Image 3" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 3)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-4.webp"
-                alt="Image 4" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 4)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-5.webp"
-                alt="Image 5" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 5)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-6.webp"
-                alt="Image 6" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 6)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-7.webp"
-                alt="Image 7" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 7)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-8.webp"
-                alt="Image 8" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-          </div>
+
           <div
             class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
             id="gallery-tab-2"
@@ -1034,243 +787,7 @@
                 </svg></button
             ></a>
           </div>
-          <div
-            class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
-            id="gallery-tab-5"
-          >
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 0)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-1.jpg"
-                alt="Image 33" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 1)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-2.jpg"
-                alt="Image 34" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 2)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-3.jpg"
-                alt="Image 35" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 3)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-4.jpg"
-                alt="Image 36" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 4)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-5.jpg"
-                alt="Image 36" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 5)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/car-boot-6.jpg"
-                alt="Image 36" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 6)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-6.webp"
-                alt="Image 36" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-            <a
-              class="max-w-[264px] max-h-[307px] rounded-[12px] relative overflow-hidden after:content-[''] after:bg-[#000]/[0.5] after:absolute after:w-full after:h-full after:top-0 after:left-full after:bottom-0 after:transition-all after:duration-700 after:ease-in-out after:hover:left-0"
-              href="#"
-              onclick="openModal(event, 7)"
-              ><img
-                class="w-full h-[100%] object-cover rounded-[12px]"
-                src="./assests1/img/balloon-dec-5.webp"
-                alt="Image 36" />
-              <button
-                class="like-btn absolute top-2 right-2 z-[999999] bg-[#121212] bg-opacity-50 p-2 rounded-full"
-                onclick="toggleLike(event)"
-              >
-                <svg
-                  id="heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-6 h-6 text-gray-400 cursor-pointer transition-fill"
-                  fill="none"
-                  stroke="white"
-                >
-                  <path
-                    id="heart-path"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 21C12 21 7 14 4 10C2.5 7.5 3 5 5 3.5C7 2 9 2 10 4C10.5 4.5 11.5 4.5 12 4C12.5 3.5 13.5 4.5 14 4C15 2 17 2 19 3.5C21 5 21.5 7.5 20 10C17 14 12 21 12 21Z"
-                  />
-                </svg></button
-            ></a>
-          </div>
+
           <div
             class="tab-content grid grid-cols-2 md:grid-cols-4 hidden gap-7"
             id="gallery-tab-6"
@@ -1508,47 +1025,208 @@
                 </svg></button
             ></a>
           </div>
-          <!-- Modal for images -->
-          <div
-            id="overlay"
-            class="fixed inset-0 bg-black opacity-70 hidden z-[999999999999999999999]"
-            onclick="closeModal()"
-          ></div>
-          <div
-            id="imageModal"
-            class="fixed inset-0 flex items-center justify-center hidden z-[999999999999999999999]"
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <footer>
+      <div
+        class="flex bg-black justify-between max-[966px]:justify-around max-[966px]:flex-wrap mt-[50px] border-[#f5a42f] border-solid border-t-1 pt-[27px] pb-[64px] mb-5 gap-8"
+        style="border-top: 1px solid #f5a42f; border-bottom: 1px solid #f5a42f"
+      >
+        <div class="flex flex-col max-w-[300px] max-[966px]:text-center">
+          <div class="!w-[136px] !h-[76px] max-[966px]:mx-auto">
+            <a class="w-full" href="/"
+              ><img class="w-full" src="./assests1/img/logo.2.png" alt="logo"
+            /></a>
+          </div>
+          <p
+            class="text-white text-[12px] sm:text-sm opacity-70 leading-[155%] mt-[15px]"
           >
-            <div
-              class="relative max-w-[600px] max-h-[600px] bg-transparent rounded-lg mx-auto my-[auto]"
-            >
-              <span
-                class="absolute flex justify-center items-center w-[40px] h-[auto] top-2 right-2 text-[#F7C810] text-3xl cursor-pointer bg-black bg-opacity-50 rounded-md hover:bg-opacity-70"
-                onclick="closeModal()"
-                >×</span
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <div class="flex mt-[32px] gap-[30px] max-[966px]:mx-auto">
+            <a class="group hover:scale-125 duration-300" href="#"
+              ><svg
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-              <img
-                id="modalImage"
-                class="w-[600px] h-[600px] object-cover rounded-lg"
-                src=""
-                alt="Zoomed Image"
-              />
-              <button
-                class="absolute left-2 top-1/2 transform -translate-y-1/2 text-[#F7C810] text-3xl w-10 h-10 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-lg"
-                onclick="changeImage(-1)"
+                <circle
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  cx="19.2"
+                  cy="19.199"
+                  r="19.2"
+                  fill="white"
+                />
+                <rect
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  x="3.20117"
+                  y="3.19922"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="white"
+                />
+                <path
+                  d="M21.8665 21.1986H25.1999L26.5332 15.8652H21.8665V13.1986C21.8665 11.8252 21.8665 10.5319 24.5332 10.5319H26.5332V6.0519C26.0985 5.99457 24.4572 5.86523 22.7239 5.86523C19.1039 5.86523 16.5332 8.07457 16.5332 12.1319V15.8652H12.5332V21.1986H16.5332V32.5319H21.8665V21.1986Z"
+                  fill="#020105"
+                />
+              </svg>
+            </a>
+            <a class="group hover:scale-125 duration-300" href="#"
+              ><svg
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                &#10094;
-              </button>
-              <button
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-[#F7C810] text-3xl w-10 h-10 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-lg"
-                onclick="changeImage(1)"
+                <circle
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  cx="19.6004"
+                  cy="19.199"
+                  r="19.2"
+                  fill="white"
+                />
+                <rect
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  x="3.59961"
+                  y="3.19922"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  fill="white"
+                />
+                <path
+                  d="M20.9704 5.86621C22.4704 5.87021 23.2317 5.87821 23.889 5.89688L24.1477 5.90621C24.4464 5.91688 24.741 5.93021 25.097 5.94621C26.5157 6.01288 27.4837 6.23688 28.333 6.56621C29.213 6.90488 29.9544 7.36354 30.6957 8.10354C31.374 8.76985 31.8986 9.57617 32.2331 10.4662C32.5624 11.3155 32.7864 12.2835 32.8531 13.7035C32.8691 14.0582 32.8824 14.3529 32.893 14.6529L32.9011 14.9115C32.9211 15.5675 32.9291 16.3289 32.9317 17.8289L32.9331 18.8235V20.5702C32.9363 21.5428 32.9261 22.5153 32.9024 23.4875L32.8944 23.7462C32.8837 24.0462 32.8704 24.3409 32.8544 24.6955C32.7877 26.1155 32.5611 27.0822 32.2331 27.9329C31.8986 28.8229 31.374 29.6292 30.6957 30.2955C30.0294 30.9738 29.2231 31.4985 28.333 31.8329C27.4837 32.1622 26.5157 32.3862 25.097 32.4529L24.1477 32.4929L23.889 32.5009C23.2317 32.5195 22.4704 32.5289 20.9704 32.5315L19.9757 32.5329H18.2304C17.2574 32.5363 16.2844 32.5261 15.3117 32.5022L15.0531 32.4942C14.7365 32.4822 14.4201 32.4684 14.1037 32.4529C12.6851 32.3862 11.7171 32.1622 10.8664 31.8329C9.97682 31.4983 9.17097 30.9736 8.50505 30.2955C7.82631 29.6294 7.3012 28.823 6.96638 27.9329C6.63705 27.0835 6.41305 26.1155 6.34638 24.6955L6.30638 23.7462L6.29972 23.4875C6.27514 22.5153 6.26403 21.5428 6.26638 20.5702V17.8289C6.26269 16.8563 6.27247 15.8838 6.29572 14.9115L6.30505 14.6529C6.31572 14.3529 6.32905 14.0582 6.34505 13.7035C6.41172 12.2835 6.63572 11.3169 6.96505 10.4662C7.30064 9.57581 7.82668 8.76946 8.50638 8.10354C9.17192 7.42561 9.9773 6.90098 10.8664 6.56621C11.7171 6.23688 12.6837 6.01288 14.1037 5.94621C14.4584 5.93021 14.7544 5.91688 15.0531 5.90621L15.3117 5.89821C16.284 5.87452 17.2565 5.8643 18.229 5.86754L20.9704 5.86621ZM19.5997 12.5329C17.8316 12.5329 16.1359 13.2353 14.8857 14.4855C13.6354 15.7357 12.9331 17.4314 12.9331 19.1995C12.9331 20.9677 13.6354 22.6633 14.8857 23.9136C16.1359 25.1638 17.8316 25.8662 19.5997 25.8662C21.3678 25.8662 23.0635 25.1638 24.3138 23.9136C25.564 22.6633 26.2664 20.9677 26.2664 19.1995C26.2664 17.4314 25.564 15.7357 24.3138 14.4855C23.0635 13.2353 21.3678 12.5329 19.5997 12.5329ZM19.5997 15.1995C20.125 15.1995 20.6452 15.3028 21.1305 15.5038C21.6158 15.7047 22.0568 15.9993 22.4283 16.3706C22.7998 16.742 23.0945 17.1829 23.2956 17.6682C23.4967 18.1535 23.6003 18.6736 23.6004 19.1989C23.6005 19.7242 23.4971 20.2443 23.2962 20.7297C23.0952 21.215 22.8007 21.656 22.4293 22.0275C22.0579 22.399 21.617 22.6937 21.1317 22.8948C20.6465 23.0959 20.1263 23.1995 19.6011 23.1995C18.5402 23.1995 17.5228 22.7781 16.7726 22.028C16.0225 21.2778 15.6011 20.2604 15.6011 19.1995C15.6011 18.1387 16.0225 17.1213 16.7726 16.3711C17.5228 15.621 18.5402 15.1995 19.6011 15.1995M26.601 10.5329C26.159 10.5329 25.7351 10.7085 25.4225 11.021C25.11 11.3336 24.9344 11.7575 24.9344 12.1995C24.9344 12.6416 25.11 13.0655 25.4225 13.3781C25.7351 13.6906 26.159 13.8662 26.601 13.8662C27.0431 13.8662 27.467 13.6906 27.7796 13.3781C28.0921 13.0655 28.2677 12.6416 28.2677 12.1995C28.2677 11.7575 28.0921 11.3336 27.7796 11.021C27.467 10.7085 27.0431 10.5329 26.601 10.5329Z"
+                  fill="#020105"
+                />
+              </svg>
+            </a>
+            <a class="group hover:scale-125 duration-300" href="#"
+              ><svg
+                width="40"
+                height="39"
+                viewBox="0 0 40 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                &#10095;
-              </button>
+                <circle
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  cx="20.0008"
+                  cy="19.199"
+                  r="19.2"
+                  fill="white"
+                />
+                <rect
+                  class="group-hover:fill-[#f5a42f] duration-200"
+                  x="4"
+                  y="3.19922"
+                  width="32"
+                  height="32"
+                  rx="12"
+                  fill="white"
+                />
+                <path
+                  d="M20.3266 8.53223C21.0386 8.53623 22.82 8.55356 24.7133 8.62956L25.3853 8.65889C27.2906 8.74823 29.1946 8.90289 30.14 9.16556C31.4 9.52023 32.3893 10.5522 32.724 11.8616C33.2573 13.9416 33.324 17.9976 33.332 18.9802L33.3333 19.1829V19.4149C33.324 20.3976 33.2573 24.4549 32.724 26.5336C32.3853 27.8469 31.3946 28.8802 30.14 29.2296C29.1946 29.4922 27.2906 29.6469 25.3853 29.7362L24.7133 29.7669C22.82 29.8416 21.0386 29.8602 20.3266 29.8629L20.0133 29.8642H19.6733C18.1666 29.8549 11.8653 29.7869 9.85997 29.2296C8.6013 28.8749 7.61064 27.8429 7.27597 26.5336C6.74264 24.4536 6.67597 20.3976 6.66797 19.4149V18.9802C6.67597 17.9976 6.74264 13.9402 7.27597 11.8616C7.61464 10.5482 8.6053 9.51489 9.8613 9.16689C11.8653 8.60823 18.168 8.54023 19.6746 8.53223H20.3266ZM17.3333 14.5322V23.8656L25.3333 19.1989L17.3333 14.5322Z"
+                  fill="#020105"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex max-[600px]:flex-wrap gap-y-[50px] gap-x-10 min-[440px]:gap-x-[80px] xl:gap-[110px] mt-[37px] max-[600px]:justify-around max-[966px]:justify-between max-[966px]:w-full"
+        >
+          <div class="flex flex-col gap-[23px] sm:gap-[30px]">
+            <p class="text-white text-sm sm:text-base font-semibold">About</p>
+            <div class="flex flex-col gap-[13px] sm:gap-5">
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Our Mission</a
+              >
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#Services"
+                >Customer Services</a
+              >
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Our Sustainability Efforts</a
+              >
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#location"
+                >Our Locations</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-[23px] sm:gap-[30px]">
+            <p class="text-white text-sm sm:text-base font-semibold">
+              Services
+            </p>
+            <div class="flex flex-col gap-[13px] sm:gap-5">
+              <a
+                id="birthdayLink"
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Birthday Decoration</a
+              >
+              <a
+                id="anniversaryLink"
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Anniversary Decoration</a
+              >
+              <a
+                id="babyShowerLink"
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Baby Shower Decoration</a
+              >
+              <a
+                id="coupleRoomLink"
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Couple Room Decoration</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-[23px] sm:gap-[30px] min-[966px]:mr-5">
+            <p class="text-white text-sm sm:text-base font-semibold">Support</p>
+            <div class="flex flex-col gap-[13px] sm:gap-5">
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Help Centre</a
+              >
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >FAQ’s
+              </a>
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="#"
+                >Status
+              </a>
+              <a
+                class="text-white text-[12px] sm:text-sm opacity-70 hover:opacity-100 hover:text-[#f5a42f] duration-200"
+                href="tel:+91 8801504661"
+              >
+                Contact</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
     <script>
       let currentIndex = null;
       let currentTabIndex = 0; // Track the current tab index
@@ -1679,6 +1357,41 @@
           button.querySelector("svg").setAttribute("fill", "none"); // Change back to white when unliked
           button.querySelector("svg").setAttribute("stroke", "white"); // Change back to white when unliked
         }
+      }
+    </script>
+    <script>
+      document
+        .getElementById("birthdayLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToGalleryAndOpenTab(0); // Open Birthday tab
+        });
+
+      document
+        .getElementById("anniversaryLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToGalleryAndOpenTab(2); // Open Anniversary tab
+        });
+
+      document
+        .getElementById("babyShowerLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToGalleryAndOpenTab(1); // Open Baby Shower tab
+        });
+
+      document
+        .getElementById("coupleRoomLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToGalleryAndOpenTab(3); // Open Couple Room tab
+        });
+
+      function scrollToGalleryAndOpenTab(tabIndex) {
+        const gallerySection = document.getElementById("odecoration");
+        gallerySection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the gallery section
+        openTab(tabIndex); // Open the corresponding tab
       }
     </script>
   </body>
